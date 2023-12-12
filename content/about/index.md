@@ -34,7 +34,7 @@ I also have experience with **Adobe Premiere** but I GREATLY dislike the workflo
 
 Since August 2020 I've been working mainly as a video editor for [**Diaphone**](https://www.youtube.com/@Diaphone) (a top level fighting game player and content creator), making mostly all videos and thumbnails on the channel (around 185) and getting over 6 Million views and 70.000 suscribers. While also making some other videos and thumbnails for other smallers creators in the same space.
 
-| ![thumbnails.png](/images/thumbnails.png)|
+| ![thumbnails.png](TheDoorOfFate/static/images/thumbnails.png)|
 |:--:|
 | *A bunch of recent thumbnails* |
 
@@ -56,7 +56,7 @@ I've participated in some YTPMV Collaborations, including the almost 2 hour long
 
 Around 2008 I started playing Super Smash Bros. Melee casually with some high school friends, and I became obsessed with it. It lead me to start competing in tournaments when Brawl came out, which I was never good at, but I was passionate enough to organize our own tournaments, create a now defunct small eSports team (CATeam) and even [collaborating with a local TV in SSBB's final year](https://www.youtube.com/watch?v=lnzwjSDVG_8).
 
-| ![vision6](/gaming/thegamer/ELGAMER.jpggaming/)|
+| ![vision6](/gaming/thegamer/ELGAMER.jpg)|
 |:--:|
 | *That's me at the bottom right at a TV interview (2014)* |
 
