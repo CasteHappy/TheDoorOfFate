@@ -1,13 +1,328 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Sidechain Compression (Audio Ducking) in Vegas Pro | CasteHappy</title><meta name=keywords content><meta name=description content="For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
-Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all."><meta name=author content="Caste"><link rel=canonical href=https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/><link crossorigin=anonymous href=/TheDoorOfFate/assets/css/stylesheet.9329d037bc79464b26647fb72e079cd738f5d2418b1df4da3b515db9e22cb4d9.css integrity="sha256-kynQN7x5RksmZH+3Lgec1zj10kGLHfTaO1FdueIstNk=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/TheDoorOfFate/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://CasteHappy.github.io/TheDoorOfFate/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://CasteHappy.github.io/TheDoorOfFate/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://CasteHappy.github.io/TheDoorOfFate/favicon-32x32.png><link rel=apple-touch-icon href=https://CasteHappy.github.io/TheDoorOfFate/apple-touch-icon.png><link rel=mask-icon href=https://CasteHappy.github.io/TheDoorOfFate/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:title" content="Sidechain Compression (Audio Ducking) in Vegas Pro"><meta property="og:description" content="For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
-Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all."><meta property="og:type" content="article"><meta property="og:url" content="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/"><meta property="og:image" content="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/images/sidechain-compression-cover.png"><meta property="article:section" content="tutorials"><meta property="article:published_time" content="2023-08-27T22:39:00+02:00"><meta property="article:modified_time" content="2023-08-27T22:39:00+02:00"><meta property="og:site_name" content="CasteHappy"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/images/sidechain-compression-cover.png"><meta name=twitter:title content="Sidechain Compression (Audio Ducking) in Vegas Pro"><meta name=twitter:description content="For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
-Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tutorials","item":"https://CasteHappy.github.io/TheDoorOfFate/tutorials/"},{"@type":"ListItem","position":2,"name":"Sidechain Compression (Audio Ducking) in Vegas Pro","item":"https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Sidechain Compression (Audio Ducking) in Vegas Pro","name":"Sidechain Compression (Audio Ducking) in Vegas Pro","description":"For a month or two I\u0026rsquo;ve been using sidechain compression in most of the vids I\u0026rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.\nJust in case you don\u0026rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won\u0026rsquo;t get compressed at all.","keywords":[],"articleBody":"For a month or two I’ve been using sidechain compression in most of the vids I’ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.\nJust in case you don’t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won’t get compressed at all.\nAfter some research I could only find a couple of solutions for Vegas Pro, one that is native to the software, but that I really don’t trust / I find too much work for such a simple thing. And another one that requires a plugin called Sidechain Compressor V2 by dB Audioware, it’s 79 bucks, but you can get it by other means.\nIt’s very serviceable, but for some reason it won’t ever save changes if you close Vegas Pro, so you have to either save the state of the plugin as a preset before closing the program, or just take a screenshot so you remember next time you open the project.\nI’ve also read that you can do this with a FabFilter plugin, but I haven’t figure out how yet, and I’m honestly fine with the proccess I use now.\nHow to use the compressor The proccess is very straightforward, just create one track that will be used as the trigger for the compressor (voice track), and at least another track that will affected by it (music track, for example), then go to View \u003e Window \u003e Mixing Console or just press Ctrl+Alt+5 to open the Mixing Console.\nIn the Mixing Console, you have to create 2 Buses (A and B) by clicking on Insert Bus, and then clicking on the FX icon to open the effects list. Search for the Sidechain Compressor V2 plugin and add it to both buses.\nBefore doing anything with the compressor, we need to “assign” the buses to the different tracks we want for this effect. We will assign “Bus A” to the tracks that will trigger the compressor, and “Bus B” to the tracks that will be affected by the compressor. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the “output” option (by default this option will be “Master”).\nNow, in the compressor, we have to turn on “Universal Sidechain” in both Buses. Then we just have to set Bus A to “Send” and Bus B to “Receive”.\nAnd that’s basically all there is to it, only thing left is to tweak stuff around but you only want to modify the compressor in Bus B, the compressor we added to Bus A is just to send the signal to Bus B\nI won’t explain all the knobs and options in the compressor, you can look everything up in google, there’s a lot of information on compressors and what all the settings and options are. I’ll just leave you with a quick example of how the final result sounds like.\nParameters I’ve changed:\nThreshold: -26 Ratio: 10:1 Release: 1000ms This is how it sounds without the compressor:\nObviously the music eats up the voiceover, so we’d have to lower the music much more than that. This way, the music will be too low or too high sometimes unless we manually increase or decrease the levels when we need it, which is a lot more work than using the compressor to do everything for us.\nOf course there’s a lot more to this and I’m still a noob at everything related to audio.\nThe results will be a lot better using Equalizers and a bunch of other effects, but just by using audio ducking you have a lot more freedom to choose different kind of songs for the project and overall the video will flow a lot better because you won’t have to be as careful with the voice track being too loud / quiet.\nI hope this helps someone, I’ve found a bunch of people mentioning this plugin in a couple of forums but I haven’t seen any visual guides for it. If you have any questions you can hit me up\n","wordCount":"731","inLanguage":"en","image":"https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/images/sidechain-compression-cover.png","datePublished":"2023-08-27T22:39:00+02:00","dateModified":"2023-08-27T22:39:00+02:00","author":{"@type":"Person","name":"Caste"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/"},"publisher":{"@type":"Organization","name":"CasteHappy","logo":{"@type":"ImageObject","url":"https://CasteHappy.github.io/TheDoorOfFate/favicon.ico"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://CasteHappy.github.io/TheDoorOfFate/ accesskey=h title="CasteHappy (Alt + H)"><img src=https://CasteHappy.github.io/images/crosshair.png alt aria-label=logo height=35>CasteHappy</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://CasteHappy.github.io/TheDoorOfFate/blogs/ title=Blogs><span>Blogs</span></a></li><li><a href=https://CasteHappy.github.io/TheDoorOfFate/portfolio/ title=Portfolio><span>Portfolio</span></a></li><li><a href=https://CasteHappy.github.io/TheDoorOfFate/tutorials/ title=Tutorials><span>Tutorials</span></a></li><li><a href=https://CasteHappy.github.io/TheDoorOfFate/about/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://CasteHappy.github.io/TheDoorOfFate/>Home</a>&nbsp;»&nbsp;<a href=https://CasteHappy.github.io/TheDoorOfFate/tutorials/>Tutorials</a></div><h1 class=post-title>Sidechain Compression (Audio Ducking) in Vegas Pro</h1><div class=post-meta><span title='2023-08-27 22:39:00 +0200 +0200'>August 27, 2023</span>&nbsp;·&nbsp;Caste</div></header><figure class=entry-cover><img loading=lazy src=https://CasteHappy.github.io/images/sidechain-compression-cover.png alt></figure><div class=post-content><p>For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.</p><p>Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all.</p><p>After some research I could only find a couple of solutions for Vegas Pro, <a href=https://www.vegascreativesoftware.info/us/forum/sidechain-aka-key-in-compression-impossible--83449/#ca488703><strong>one that is native to the software</strong></a>, but that I really don&rsquo;t trust / I find too much work for such a simple thing. And another one that requires a plugin called <a href=https://www.db-audioware.com/sidechain-compressor><strong>Sidechain Compressor V2 by dB Audioware</strong></a>, it&rsquo;s 79 bucks, but you can get it <a href=https://audioz.download/software/win/137876-download_db-audioware-sidechain-compressor-v200-ce-vr.html><em>by other means</em></a>.</p><p>It&rsquo;s very serviceable, but for some reason it won&rsquo;t ever save changes if you close Vegas Pro, so you have to either save the state of the plugin as a preset before closing the program, or just take a screenshot so you remember next time you open the project.</p><p>I&rsquo;ve also read that you can do this with a FabFilter plugin, but I haven&rsquo;t figure out how yet, and I&rsquo;m honestly fine with the proccess I use now.</p><h2 id=how-to-use-the-compressor>How to use the compressor<a hidden class=anchor aria-hidden=true href=#how-to-use-the-compressor>#</a></h2><p>The proccess is very straightforward, just create one track that will be used as the trigger for the compressor (voice track), and at least another track that will affected by it (music track, for example), then go to <strong>View > Window > Mixing Console</strong> or just press <strong>Ctrl+Alt+5</strong> to open the <strong>Mixing Console</strong>.</p><p><img loading=lazy src=/images/mixing_console.png alt="mixing console 1">
-<img loading=lazy src=/images/mixing_console2.png alt="mixing console 2"></p><p>In the Mixing Console, you have to create 2 Buses (A and B) by clicking on <strong>Insert Bus</strong>, and then clicking on the <strong>FX</strong> icon to open the effects list. Search for the Sidechain Compressor V2 plugin and <strong>add it to both buses</strong>.</p><p><img loading=lazy src=/images/mixing_console3.png alt="mixing console 3">
-<img loading=lazy src=/images/mixing_console4.png alt="mixing console 4">
-<img loading=lazy src=/images/mixing_console5.png alt="mixing console 5"></p><p>Before doing anything with the compressor, we need to &ldquo;assign&rdquo; the buses to the different tracks we want for this effect.
-<strong>We will assign &ldquo;Bus A&rdquo; to the tracks that will trigger the compressor, and &ldquo;Bus B&rdquo; to the tracks that will be affected by the compressor</strong>. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the &ldquo;output&rdquo; option (by default this option will be &ldquo;Master&rdquo;).</p><table><thead><tr><th style=text-align:center><img loading=lazy src=/images/mixing_console6.png alt="mixing console 6"></th><th style=text-align:center><img loading=lazy src=/images/mixing_console7.png alt="mixing console 7"></th></tr></thead></table><p>Now, in the compressor, we have to turn on <strong>&ldquo;Universal Sidechain&rdquo;</strong> in both Buses. Then we just have to set Bus A to <strong>&ldquo;Send&rdquo;</strong> and Bus B to <strong>&ldquo;Receive&rdquo;</strong>.</p><table><thead><tr><th style=text-align:center><img loading=lazy src=/images/mixing_consoleA.png alt="compressor A"></th><th style=text-align:center><img loading=lazy src=/images/mixing_consoleB.png alt="compressor B"></th></tr></thead></table><p>And that&rsquo;s basically all there is to it, only thing left is to tweak stuff around <strong>but you only want to modify the compressor in Bus B, the compressor we added to Bus A is just to send the signal to Bus B</strong></p><p>I won&rsquo;t explain all the knobs and options in the compressor, you can look everything up in google, there&rsquo;s a lot of information on compressors and what all the settings and options are. I&rsquo;ll just leave you with a quick example of how the final result sounds like.</p><p>Parameters I&rsquo;ve changed:</p><ul><li>Threshold: -26</li><li>Ratio: 10:1</li><li>Release: 1000ms</li></ul><audio controls preload=auto><source src=/audio/compressor.wav></audio><p>This is how it sounds without the compressor:</p><audio controls preload=auto><source src=/audio/no-compressor.wav></audio><p>Obviously the music eats up the voiceover, so we&rsquo;d have to lower the music much more than that.
-This way, the music will be too low or too high sometimes unless we manually increase or decrease the levels when we need it, which is a lot more work than using the compressor to do everything for us.</p><audio controls preload=auto><source src=/audio/no-compressor-lower.wav></audio><p>Of course there&rsquo;s a lot more to this and I&rsquo;m still a noob at everything related to audio.</p><p>The results will be a lot better using Equalizers and a bunch of other effects, but just by using audio ducking you have a lot more freedom to choose different kind of songs for the project and overall the video will flow a lot better because you won&rsquo;t have to be as careful with the voice track being too loud / quiet.</p><p>I hope this helps someone, I&rsquo;ve found a bunch of people mentioning this plugin in a couple of forums but I haven&rsquo;t seen any visual guides for it. If you have any questions you can hit me up</p></div><footer class=post-footer><ul class=post-tags></ul></footer></article></main><footer class=footer><span>&copy; 2023 <a href=https://CasteHappy.github.io/TheDoorOfFate/>CasteHappy</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Sidechain Compression (Audio Ducking) in Vegas Pro | CasteHappy</title>
+<meta name="keywords" content="">
+<meta name="description" content="For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
+Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all.">
+<meta name="author" content="Caste">
+<link rel="canonical" href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/">
+<link crossorigin="anonymous" href="/TheDoorOfFate/assets/css/stylesheet.9329d037bc79464b26647fb72e079cd738f5d2418b1df4da3b515db9e22cb4d9.css" integrity="sha256-kynQN7x5RksmZH&#43;3Lgec1zj10kGLHfTaO1FdueIstNk=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/TheDoorOfFate/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://CasteHappy.github.io/TheDoorOfFate/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://CasteHappy.github.io/TheDoorOfFate/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://CasteHappy.github.io/TheDoorOfFate/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://CasteHappy.github.io/TheDoorOfFate/apple-touch-icon.png">
+<link rel="mask-icon" href="https://CasteHappy.github.io/TheDoorOfFate/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Sidechain Compression (Audio Ducking) in Vegas Pro" />
+<meta property="og:description" content="For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
+Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/" />
+<meta property="og:image" content="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/images/sidechain-compression-cover.png" /><meta property="article:section" content="tutorials" />
+<meta property="article:published_time" content="2023-08-27T22:39:00+02:00" />
+<meta property="article:modified_time" content="2023-08-27T22:39:00+02:00" /><meta property="og:site_name" content="CasteHappy" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/images/sidechain-compression-cover.png" />
+<meta name="twitter:title" content="Sidechain Compression (Audio Ducking) in Vegas Pro"/>
+<meta name="twitter:description" content="For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
+Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Tutorials",
+      "item": "https://CasteHappy.github.io/TheDoorOfFate/tutorials/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Sidechain Compression (Audio Ducking) in Vegas Pro",
+      "item": "https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Sidechain Compression (Audio Ducking) in Vegas Pro",
+  "name": "Sidechain Compression (Audio Ducking) in Vegas Pro",
+  "description": "For a month or two I\u0026rsquo;ve been using sidechain compression in most of the vids I\u0026rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.\nJust in case you don\u0026rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won\u0026rsquo;t get compressed at all.",
+  "keywords": [
+    
+  ],
+  "articleBody": "For a month or two I’ve been using sidechain compression in most of the vids I’ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.\nJust in case you don’t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won’t get compressed at all.\nAfter some research I could only find a couple of solutions for Vegas Pro, one that is native to the software, but that I really don’t trust / I find too much work for such a simple thing. And another one that requires a plugin called Sidechain Compressor V2 by dB Audioware, it’s 79 bucks, but you can get it by other means.\nIt’s very serviceable, but for some reason it won’t ever save changes if you close Vegas Pro, so you have to either save the state of the plugin as a preset before closing the program, or just take a screenshot so you remember next time you open the project.\nI’ve also read that you can do this with a FabFilter plugin, but I haven’t figure out how yet, and I’m honestly fine with the proccess I use now.\nHow to use the compressor The proccess is very straightforward, just create one track that will be used as the trigger for the compressor (voice track), and at least another track that will affected by it (music track, for example), then go to View \u003e Window \u003e Mixing Console or just press Ctrl+Alt+5 to open the Mixing Console.\nIn the Mixing Console, you have to create 2 Buses (A and B) by clicking on Insert Bus, and then clicking on the FX icon to open the effects list. Search for the Sidechain Compressor V2 plugin and add it to both buses.\nBefore doing anything with the compressor, we need to “assign” the buses to the different tracks we want for this effect. We will assign “Bus A” to the tracks that will trigger the compressor, and “Bus B” to the tracks that will be affected by the compressor. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the “output” option (by default this option will be “Master”).\nNow, in the compressor, we have to turn on “Universal Sidechain” in both Buses. Then we just have to set Bus A to “Send” and Bus B to “Receive”.\nAnd that’s basically all there is to it, only thing left is to tweak stuff around but you only want to modify the compressor in Bus B, the compressor we added to Bus A is just to send the signal to Bus B\nI won’t explain all the knobs and options in the compressor, you can look everything up in google, there’s a lot of information on compressors and what all the settings and options are. I’ll just leave you with a quick example of how the final result sounds like.\nParameters I’ve changed:\nThreshold: -26 Ratio: 10:1 Release: 1000ms This is how it sounds without the compressor:\nObviously the music eats up the voiceover, so we’d have to lower the music much more than that. This way, the music will be too low or too high sometimes unless we manually increase or decrease the levels when we need it, which is a lot more work than using the compressor to do everything for us.\nOf course there’s a lot more to this and I’m still a noob at everything related to audio.\nThe results will be a lot better using Equalizers and a bunch of other effects, but just by using audio ducking you have a lot more freedom to choose different kind of songs for the project and overall the video will flow a lot better because you won’t have to be as careful with the voice track being too loud / quiet.\nI hope this helps someone, I’ve found a bunch of people mentioning this plugin in a couple of forums but I haven’t seen any visual guides for it. If you have any questions you can hit me up\n",
+  "wordCount" : "731",
+  "inLanguage": "en",
+  "image":"https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/images/sidechain-compression-cover.png","datePublished": "2023-08-27T22:39:00+02:00",
+  "dateModified": "2023-08-27T22:39:00+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Caste"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CasteHappy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://CasteHappy.github.io/TheDoorOfFate/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://CasteHappy.github.io/TheDoorOfFate/" accesskey="h" title="CasteHappy (Alt + H)">
+                <img src="https://CasteHappy.github.io/images/crosshair.png" alt="" aria-label="logo"
+                    height="35">CasteHappy</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/blogs/" title="Blogs">
+                    <span>Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://CasteHappy.github.io/TheDoorOfFate/">Home</a>&nbsp;»&nbsp;<a href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/">Tutorials</a></div>
+    <h1 class="post-title">
+      Sidechain Compression (Audio Ducking) in Vegas Pro
+    </h1>
+    <div class="post-meta"><span title='2023-08-27 22:39:00 +0200 +0200'>August 27, 2023</span>&nbsp;·&nbsp;Caste
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="lazy" src="https://CasteHappy.github.io/images/sidechain-compression-cover.png" alt="">
+        
+</figure>
+  <div class="post-content"><p>For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.</p>
+<p>Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all.</p>
+<p>After some research I could only find a couple of solutions for Vegas Pro, <a href="https://www.vegascreativesoftware.info/us/forum/sidechain-aka-key-in-compression-impossible--83449/#ca488703"><strong>one that is native to the software</strong></a>, but that I really don&rsquo;t trust / I find too much work for such a simple thing. And another one that requires a plugin called <a href="https://www.db-audioware.com/sidechain-compressor"><strong>Sidechain Compressor V2 by dB Audioware</strong></a>, it&rsquo;s 79 bucks, but you can get it <a href="https://audioz.download/software/win/137876-download_db-audioware-sidechain-compressor-v200-ce-vr.html"><em>by other means</em></a>.</p>
+<p>It&rsquo;s very serviceable, but for some reason it won&rsquo;t ever save changes if you close Vegas Pro, so you have to either save the state of the plugin as a preset before closing the program, or just take a screenshot so you remember next time you open the project.</p>
+<p>I&rsquo;ve also read that you can do this with a FabFilter plugin, but I haven&rsquo;t figure out how yet, and I&rsquo;m honestly fine with the proccess I use now.</p>
+<h2 id="how-to-use-the-compressor">How to use the compressor<a hidden class="anchor" aria-hidden="true" href="#how-to-use-the-compressor">#</a></h2>
+<p>The proccess is very straightforward, just create one track that will be used as the trigger for the compressor (voice track), and at least another track that will affected by it (music track, for example), then go to <strong>View &gt; Window &gt; Mixing Console</strong> or just press <strong>Ctrl+Alt+5</strong> to open the <strong>Mixing Console</strong>.</p>
+<p><img loading="lazy" src="/images/mixing_console.png" alt="mixing console 1"  />
+
+<img loading="lazy" src="/images/mixing_console2.png" alt="mixing console 2"  />
+</p>
+<p>In the Mixing Console, you have to create 2 Buses (A and B) by clicking on <strong>Insert Bus</strong>, and then clicking on the <strong>FX</strong> icon to open the effects list. Search for the Sidechain Compressor V2 plugin and <strong>add it to both buses</strong>.</p>
+<p><img loading="lazy" src="/images/mixing_console3.png" alt="mixing console 3"  />
+
+<img loading="lazy" src="/images/mixing_console4.png" alt="mixing console 4"  />
+
+<img loading="lazy" src="/images/mixing_console5.png" alt="mixing console 5"  />
+</p>
+<p>Before doing anything with the compressor, we need to &ldquo;assign&rdquo; the buses to the different tracks we want for this effect.
+<strong>We will assign &ldquo;Bus A&rdquo; to the tracks that will trigger the compressor, and &ldquo;Bus B&rdquo; to the tracks that will be affected by the compressor</strong>. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the &ldquo;output&rdquo; option (by default this option will be &ldquo;Master&rdquo;).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img loading="lazy" src="/images/mixing_console6.png" alt="mixing console 6"  />
+</th>
+<th style="text-align:center"><img loading="lazy" src="/images/mixing_console7.png" alt="mixing console 7"  />
+</th>
+</tr>
+</thead>
+</table>
+<p>Now, in the compressor, we have to turn on <strong>&ldquo;Universal Sidechain&rdquo;</strong> in both Buses. Then we just have to set Bus A to <strong>&ldquo;Send&rdquo;</strong> and Bus B to <strong>&ldquo;Receive&rdquo;</strong>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img loading="lazy" src="/images/mixing_consoleA.png" alt="compressor A"  />
+</th>
+<th style="text-align:center"><img loading="lazy" src="/images/mixing_consoleB.png" alt="compressor B"  />
+</th>
+</tr>
+</thead>
+</table>
+<p>And that&rsquo;s basically all there is to it, only thing left is to tweak stuff around <strong>but you only want to modify the compressor in Bus B, the compressor we added to Bus A is just to send the signal to Bus B</strong></p>
+<p>I won&rsquo;t explain all the knobs and options in the compressor, you can look everything up in google, there&rsquo;s a lot of information on compressors and what all the settings and options are. I&rsquo;ll just leave you with a quick example of how the final result sounds like.</p>
+<p>Parameters I&rsquo;ve changed:</p>
+<ul>
+<li>Threshold: -26</li>
+<li>Ratio: 10:1</li>
+<li>Release: 1000ms</li>
+</ul>
+<audio controls preload="auto">
+    <source src="/audio/compressor.wav">
+</audio>
+
+<p>This is how it sounds without the compressor:</p>
+<audio controls preload="auto">
+    <source src="/audio/no-compressor.wav">
+</audio>
+
+<p>Obviously the music eats up the voiceover, so we&rsquo;d have to lower the music much more than that.
+This way, the music will be too low or too high sometimes unless we manually increase or decrease the levels when we need it, which is a lot more work than using the compressor to do everything for us.</p>
+<audio controls preload="auto">
+    <source src="/audio/no-compressor-lower.wav">
+</audio>
+
+<p>Of course there&rsquo;s a lot more to this and I&rsquo;m still a noob at everything related to audio.</p>
+<p>The results will be a lot better using Equalizers and a bunch of other effects, but just by using audio ducking you have a lot more freedom to choose different kind of songs for the project and overall the video will flow a lot better because you won&rsquo;t have to be as careful with the voice track being too loud / quiet.</p>
+<p>I hope this helps someone, I&rsquo;ve found a bunch of people mentioning this plugin in a couple of forums but I haven&rsquo;t seen any visual guides for it. If you have any questions you can hit me up</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://CasteHappy.github.io/TheDoorOfFate/">CasteHappy</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
