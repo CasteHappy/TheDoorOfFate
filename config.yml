@@ -8,7 +8,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-canonifyURL: true
+canonifyURLs: true
 #googleAnalytics:
 
 minify:
