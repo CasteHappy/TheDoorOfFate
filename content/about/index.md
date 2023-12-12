@@ -56,7 +56,7 @@ I've participated in some YTPMV Collaborations, including the almost 2 hour long
 
 Around 2008 I started playing Super Smash Bros. Melee casually with some high school friends, and I became obsessed with it. It lead me to start competing in tournaments when Brawl came out, which I was never good at, but I was passionate enough to organize our own tournaments, create a now defunct small eSports team (CATeam) and even [collaborating with a local TV in SSBB's final year](https://www.youtube.com/watch?v=lnzwjSDVG_8).
 
-| ![vision6](https://www.universidadviu.com/sites/universidadviu.com/files/images/qu%C3%A9%20es%20un%20gamer.jpg)|
+| ![vision6](/gaming/thegamer/ELGAMER.jpggaming/)|
 |:--:|
 | *That's me at the bottom right at a TV interview (2014)* |
 
