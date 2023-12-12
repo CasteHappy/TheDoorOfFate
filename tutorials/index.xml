@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tutorials on CasteHappy</title>
+    <link>https://github.com/CasteHappy/TheDoorOfFate/tutorials/</link>
+    <description>Recent content in Tutorials on CasteHappy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Aug 2023 22:39:00 +0200</lastBuildDate><atom:link href="https://github.com/CasteHappy/TheDoorOfFate/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sidechain Compression (Audio Ducking) in Vegas Pro</title>
+      <link>https://github.com/CasteHappy/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</link>
+      <pubDate>Sun, 27 Aug 2023 22:39:00 +0200</pubDate>
+      
+      <guid>https://github.com/CasteHappy/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</guid>
+      <description>For a month or two I&amp;rsquo;ve been using sidechain compression in most of the vids I&amp;rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
+Just in case you don&amp;rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&amp;rsquo;t get compressed at all.</description>
+    </item>
+    
+  </channel>
+</rss>
