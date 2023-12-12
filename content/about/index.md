@@ -34,7 +34,7 @@ I also have experience with **Adobe Premiere** but I GREATLY dislike the workflo
 
 Since August 2020 I've been working mainly as a video editor for [**Diaphone**](https://www.youtube.com/@Diaphone) (a top level fighting game player and content creator), making mostly all videos and thumbnails on the channel (around 185) and getting over 6 Million views and 70.000 suscribers. While also making some other videos and thumbnails for other smallers creators in the same space.
 
-| ![thumbnails.png](TheDoorOfFate/static/images/thumbnails.png)|
+| ![thumbnails.png](/static/images/thumbnails.png)|
 |:--:|
 | *A bunch of recent thumbnails* |
 
@@ -137,3 +137,6 @@ Hopefully it's not the end of my competitive run 🥶
 ## Other interests
 
 Besides all that, I'm into videogames (who would've thought) and videogame criticism. Same with music, but I've been less and less interested in new music for a couple of years now. I have a [**Backloggd**](https://www.backloggd.com/u/CasteHappy/) and [**RateYourMusic**](https://rateyourmusic.com/~CasteHappy) account if you wanna see what I've been up to.
+
+
+[def]: TheDoorOfFate/static/images/thumbnails.png
