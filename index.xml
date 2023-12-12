@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CasteHappy</title>
-    <link>https://github.com/CasteHappy/TheDoorOfFate/</link>
+    <link>https://CasteHappy.github.io/TheDoorOfFate/</link>
     <description>Recent content on CasteHappy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Aug 2023 22:39:00 +0200</lastBuildDate><atom:link href="https://github.com/CasteHappy/TheDoorOfFate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Aug 2023 22:39:00 +0200</lastBuildDate><atom:link href="https://CasteHappy.github.io/TheDoorOfFate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PLACEHOLDER</title>
-      <link>https://github.com/CasteHappy/TheDoorOfFate/blogs/placeholder/</link>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/blogs/placeholder/</link>
       <pubDate>Sun, 27 Aug 2023 22:39:00 +0200</pubDate>
       
-      <guid>https://github.com/CasteHappy/TheDoorOfFate/blogs/placeholder/</guid>
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/blogs/placeholder/</guid>
       <description>This is a placeholder blog</description>
     </item>
     
     <item>
       <title>Sidechain Compression (Audio Ducking) in Vegas Pro</title>
-      <link>https://github.com/CasteHappy/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</link>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</link>
       <pubDate>Sun, 27 Aug 2023 22:39:00 +0200</pubDate>
       
-      <guid>https://github.com/CasteHappy/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</guid>
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</guid>
       <description>For a month or two I&amp;rsquo;ve been using sidechain compression in most of the vids I&amp;rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
 Just in case you don&amp;rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&amp;rsquo;t get compressed at all.</description>
     </item>
     
     <item>
       <title>TEST</title>
-      <link>https://github.com/CasteHappy/TheDoorOfFate/portfolio/test/</link>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/portfolio/test/</link>
       <pubDate>Sun, 27 Aug 2023 22:39:00 +0200</pubDate>
       
-      <guid>https://github.com/CasteHappy/TheDoorOfFate/portfolio/test/</guid>
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/portfolio/test/</guid>
       <description>ESTO ES UN TEST</description>
     </item>
     
     <item>
       <title>My 1st post</title>
-      <link>https://github.com/CasteHappy/TheDoorOfFate/page/</link>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/page/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>https://github.com/CasteHappy/TheDoorOfFate/page/</guid>
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/page/</guid>
       <description>Desc Text.</description>
     </item>
     
     <item>
       <title>WHO&#39;S THIS GUY</title>
-      <link>https://github.com/CasteHappy/TheDoorOfFate/about/</link>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/CasteHappy/TheDoorOfFate/about/</guid>
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/about/</guid>
       <description>Hey! I&amp;rsquo;m Caste, a self-taught video editor and fighting game competitor since around 2008. From the first time I&amp;rsquo;ve had internet access I&amp;rsquo;ve always been really fascinated by video editing and graphic design, thanks to places like Emudesc (a now defunct internet forum about videogames), DeviantArt, and of course Youtube and the YTP / YTPMV community, which really got me into learning proper video editing software and sparked my interest for a lot of internet subcultures and their repective styles, music preferences, and of course their sense of humour (I&amp;rsquo;ve been here for the laughs from the beginning, you see?</description>
     </item>
     
