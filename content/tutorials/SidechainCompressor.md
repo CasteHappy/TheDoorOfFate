@@ -75,4 +75,6 @@ Of course there's a lot more to this and I'm still a noob at everything related 
 
 The results will be a lot better using Equalizers and a bunch of other effects, but just by using audio ducking you have a lot more freedom to choose different kind of songs for the project and overall the video will flow a lot better because you won't have to be as careful with the voice track being too loud / quiet.
 
-I hope this helps someone, I've found a bunch of people mentioning this plugin in a couple of forums but I haven't seen any visual guides for it. If you have any questions you can hit me up
+I hope this helps someone, I've found a bunch of people mentioning this plugin in a couple of forums but I haven't seen any visual guides for it.
+
+If you have any questions let me know in the comments!
