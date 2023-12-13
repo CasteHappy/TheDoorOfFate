@@ -9,7 +9,7 @@ disableshare: false
 summary:
 description:
 cover:
-  image: /images/sidechain-compression-cover.png
+  image: /TheDoorOfFate/images/sidechain-compression-cover.png
   alt:
   caption:
   relative: true
