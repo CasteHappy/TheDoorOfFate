@@ -34,7 +34,7 @@ I also have experience with **Adobe Premiere** but I GREATLY dislike the workflo
 
 Since August 2020 I've been working mainly as a video editor for [**Diaphone**](https://www.youtube.com/@Diaphone) (a top level fighting game player and content creator), making mostly all videos and thumbnails on the channel (around 185) and getting over 6 Million views and 70.000 suscribers. While also making some other videos and thumbnails for other smallers creators in the same space.
 
-| ![thumbnails.png](./static/images/thumbnails.png)|
+| ![thumbnails.png](/images/thumbnails.png)|
 |:--:|
 | *A bunch of recent thumbnails* |
 
