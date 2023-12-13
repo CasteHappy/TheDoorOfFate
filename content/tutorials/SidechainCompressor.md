@@ -15,6 +15,7 @@ cover:
   relative: true
 showtoc: false
 draft: false
+comments: true
 ---
 For a month or two I've been using sidechain compression in most of the vids I've edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
 
