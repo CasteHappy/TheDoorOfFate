@@ -9,6 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 canonifyURLs: true
+relativeURLs: true
 #googleAnalytics:
 
 minify:
