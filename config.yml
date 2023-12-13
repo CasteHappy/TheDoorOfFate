@@ -42,7 +42,7 @@ params:
 
   label:
     text: "CasteHappy"
-    icon: "/images/crosshair.png"
+    icon: "/TheDoorOfFate/images/crosshair.png"
     iconHeight: 35
 
   # profile-mode
