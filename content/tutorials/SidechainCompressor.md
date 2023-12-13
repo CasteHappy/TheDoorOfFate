@@ -13,7 +13,7 @@ cover:
   alt:
   caption:
   relative: true
-showtoc: true
+showtoc: false
 draft: false
 comments: true
 ---
