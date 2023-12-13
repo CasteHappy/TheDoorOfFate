@@ -15,6 +15,7 @@ cover:
   relative: true
 showtoc: false
 draft: false
+comments: true
 ---
 
 This is a placeholder blog
