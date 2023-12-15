@@ -33,13 +33,16 @@ The proccess is very straightforward, just create one track that will be used as
 
 ![mixing console 1](/images/mixing_console.png)
 
+
 ![mixing console 2](/images/mixing_console2.png)
 
 In the Mixing Console, you have to create 2 Buses (A and B) by clicking on **Insert Bus**, and then clicking on the **FX** icon to open the effects list. Search for the Sidechain Compressor V2 plugin and **add it to both buses**.
 
 ![mixing console 3](/images/mixing_console3.png)
 
+
 ![mixing console 4](/images/mixing_console4.png)
+
 
 ![mixing console 5](/images/mixing_console5.png)
 
