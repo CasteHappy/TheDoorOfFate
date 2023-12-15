@@ -1,4 +1,8 @@
 /* Allocate a single column when the width of the page is small. */
+.tag-entry .entry-cover {
+    display: flex;
+}
+
 .post-entry {
     display: grid;
     grid-template-columns: 1fr;
