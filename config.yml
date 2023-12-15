@@ -48,7 +48,8 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "The door of fate, shall open"
+    title: "The Door of Fate, 
+    shall open"
     subtitle: "Online home of Javier (Caste) Castellanos, video editor, YTPMV enthusiast,
     FGC competitor and piracy apologist."
     imageUrl: "/TheDoorOfFate/images/door_of_fate.gif"
