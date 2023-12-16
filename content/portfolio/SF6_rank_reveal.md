@@ -9,7 +9,7 @@ disableshare: false
 summary:
 description:
 cover:
-  image: /images/rank_portada.png
+  image: "/images/rank_portada.png"
   alt:
   caption:
   relative: true
