@@ -57,8 +57,8 @@ Before doing anything with the compressor, we need to "assign" the buses to the 
     <th><img src="/images/mixing_console6.png"</th>
     <th><img src="/images/mixing_console7.png"</th>
   </tr>
-  </table>
-  </div>
+</table>
+</div>
 
   {{< /rawhtml >}}
 
@@ -72,8 +72,8 @@ Now, in the compressor, we have to turn on **"Universal Sidechain"** in both Bus
     <th><img src="/images/mixing_consoleA.png"</th>
     <th><img src="/images/mixing_consoleB.png"</th>
   </tr>
-  </table>
-  </div>
+</table>
+</div>
   {{< /rawhtml >}}
 
 
