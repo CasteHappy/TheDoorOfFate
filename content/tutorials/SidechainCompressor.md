@@ -53,10 +53,10 @@ Before doing anything with the compressor, we need to "assign" the buses to the 
 <table class="center">
   <tr>
     <th><img src="/images/mixing_console6.png"</th>
-    <th><img src="//images/mixing_console7.png"</th>
+    <th><img src="/images/mixing_console7.png"</th>
   </tr>
   </table>
-  {{ /rawhtml }}
+  {{< /rawhtml >}}
 
 
 Now, in the compressor, we have to turn on **"Universal Sidechain"** in both Buses. Then we just have to set Bus A to **"Send"** and Bus B to **"Receive"**.
@@ -65,10 +65,10 @@ Now, in the compressor, we have to turn on **"Universal Sidechain"** in both Bus
 <table class="center">
   <tr>
     <th><img src="/images/mixing_consoleA.png"</th>
-    <th><img src="//images/mixing_consoleB.png"</th>
+    <th><img src="/images/mixing_consoleB.png"</th>
   </tr>
   </table>
-  {{ /rawhtml }}
+  {{< /rawhtml >}}
 
 
 And that's basically all there is to it, only thing left is to tweak stuff around **but you only want to modify the compressor in Bus B, the compressor we added to Bus A is just to send the signal to Bus B**
