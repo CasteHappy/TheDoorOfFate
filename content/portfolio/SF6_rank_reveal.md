@@ -15,6 +15,7 @@ cover:
   relative: true
 showtoc: false
 draft: false
+comments: true
 ---
 
 Last month I uploaded a "game show" video to Diaphone's channel where he and Jmcrofts had to guess the rank of random players in SF6.
