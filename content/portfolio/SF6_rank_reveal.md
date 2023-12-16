@@ -101,7 +101,7 @@ Looking good! Only thing left is to add the actual rank renders, and a couple of
   </tr>
   <tr>
     <td colspan="2" style="text-align: center">
-    Used the CC Star Burst effect for this, but didn't look how I wanted. I don't know how to achieve the look I was going for yet, but it's a really small part of the animation so it's
+    Used the CC Star Burst effect for this, but didn't look how I wanted. I don't know how to achieve the look I was going for yet, but it's a really small part of the animation so it's not a big deal.
     </td>
   </tr>
 </table>
@@ -112,7 +112,7 @@ Looking good! Only thing left is to add the actual rank renders, and a couple of
   </tr>
   <tr>
     <td colspan="2" style="text-align: center">
-    Made a circule and smashed it to pieces by using the Disperson effect. This also doesn't look exactly like the original animations, where the triangle shaped pieces get smaller and smaller before they disappear. Couldn't find a parameter that could do what I was looking for, and I didn't want to make every shape one by one so I could achieve the exact effect.  But I think it looks cool anyway.
+    Made a circle and smashed it to pieces by using the Disperson effect. This also doesn't look exactly like the original animations, where the triangle shaped pieces get smaller and smaller before they disappear. Couldn't find a parameter that could do what I was looking for, and I didn't want to make every shape one by one so I could achieve the exact effect.  But I think it looks cool anyway.
     </td>
   </tr>
 </table>
