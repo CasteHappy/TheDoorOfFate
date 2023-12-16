@@ -9,7 +9,7 @@ disableshare: false
 summary:
 description:
 cover:
-  image: /TheDoorOfFate/images/rank_portada.png
+  image: /TheDoorOfFate/images/sidechain-compression-cover.png
   alt:
   caption:
   relative: true
