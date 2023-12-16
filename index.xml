@@ -6,7 +6,17 @@
     <description>Recent content on CasteHappy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Aug 2023 22:39:00 +0200</lastBuildDate><atom:link href="https://CasteHappy.github.io/TheDoorOfFate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Dec 2023 22:39:00 +0200</lastBuildDate><atom:link href="https://CasteHappy.github.io/TheDoorOfFate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recreating the Street Fighter 6 Rank Up! animation </title>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/portfolio/SF6RankUp/</link>
+      <pubDate>Wed, 13 Dec 2023 22:39:00 +0200</pubDate>
+      
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/portfolio/SF6RankUp/</guid>
+      <description>Last month I uploaded a &amp;ldquo;game show&amp;rdquo; video to Diaphone&amp;rsquo;s channel where he and Jmcrofts had to guess the rank of random players in SF6.
+From the beginning I knew I wanted to use the rank up animation from the actual game to reveal the results, but it was pretty much impossible for me to rip the animation, and I&amp;rsquo;m sure I would have to get to every single rank myself so I could record every single one, and that&amp;rsquo;s not gonna happen lol.</description>
+    </item>
+    
     <item>
       <title>PLACEHOLDER</title>
       <link>https://CasteHappy.github.io/TheDoorOfFate/blogs/placeholder/</link>
@@ -24,15 +34,6 @@
       <guid>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</guid>
       <description>For a month or two I&amp;rsquo;ve been using sidechain compression in most of the vids I&amp;rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
 Just in case you don&amp;rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&amp;rsquo;t get compressed at all.</description>
-    </item>
-    
-    <item>
-      <title>TEST</title>
-      <link>https://CasteHappy.github.io/TheDoorOfFate/portfolio/test/</link>
-      <pubDate>Sun, 27 Aug 2023 22:39:00 +0200</pubDate>
-      
-      <guid>https://CasteHappy.github.io/TheDoorOfFate/portfolio/test/</guid>
-      <description>ESTO ES UN TEST</description>
     </item>
     
     <item>
