@@ -50,7 +50,7 @@ Before doing anything with the compressor, we need to "assign" the buses to the 
 **We will assign "Bus A" to the tracks that will trigger the compressor, and "Bus B" to the tracks that will be affected by the compressor**. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the "output" option (by default this option will be "Master").
 
 {{< rawhtml >}}
-<table>
+<table class="center">
   <tr>
     <th><img src="/images/mixing_console6.png"</th>
     <th><img src="//images/mixing_console7.png"</th>
@@ -62,7 +62,7 @@ Before doing anything with the compressor, we need to "assign" the buses to the 
 Now, in the compressor, we have to turn on **"Universal Sidechain"** in both Buses. Then we just have to set Bus A to **"Send"** and Bus B to **"Receive"**.
 
 {{< rawhtml >}}
-<table>
+<table class="center">
   <tr>
     <th><img src="/images/mixing_consoleA.png"</th>
     <th><img src="//images/mixing_consoleB.png"</th>
