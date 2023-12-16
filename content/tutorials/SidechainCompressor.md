@@ -49,25 +49,31 @@ In the Mixing Console, you have to create 2 Buses (A and B) by clicking on **Ins
 Before doing anything with the compressor, we need to "assign" the buses to the different tracks we want for this effect.
 **We will assign "Bus A" to the tracks that will trigger the compressor, and "Bus B" to the tracks that will be affected by the compressor**. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the "output" option (by default this option will be "Master").
 
+
 {{< rawhtml >}}
-<table class="center">
+<div align="center">
+<table>
   <tr>
     <th><img src="/images/mixing_console6.png"</th>
     <th><img src="/images/mixing_console7.png"</th>
   </tr>
   </table>
+  </div>
+
   {{< /rawhtml >}}
 
 
 Now, in the compressor, we have to turn on **"Universal Sidechain"** in both Buses. Then we just have to set Bus A to **"Send"** and Bus B to **"Receive"**.
 
 {{< rawhtml >}}
-<table class="center">
+<div align="center">
+<table>
   <tr>
     <th><img src="/images/mixing_consoleA.png"</th>
     <th><img src="/images/mixing_consoleB.png"</th>
   </tr>
   </table>
+  </div>
   {{< /rawhtml >}}
 
 
