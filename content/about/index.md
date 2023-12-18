@@ -49,7 +49,7 @@ I've participated in some YTPMV Collaborations, including the almost 2 hour long
 I've been competing and organizing tournaments for SSB (and much later, fighting games) since around 2009 - 2010, getting repectable placements in Smash 4, Smash Ultimate, Dragon Ball FighterZ and Guilty Gear Strive. 
 Back in 2018 I even got sponsored by "Vortex", a now defunct local fgc team, but it didn't last very long. I also got into speedrunning around 2017.
 
-- **#22 2015 Smash 4 Spanish Ranking**
+- **#22 Smash 4 Spanish Ranking (2015)**
 - **Best Smash 4 player in Albacete (2014 to 2016)**
 - **Best Smash Ult. player in Albacete (2019)**
 - **#39 Dragon Ball FighterZ Spanish Ranking (2019)**
