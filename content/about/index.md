@@ -1,5 +1,5 @@
 ---
-title: "WHO'S THIS GUY"
+title: "Who's this?"
 date:
 slug: about
 category:
