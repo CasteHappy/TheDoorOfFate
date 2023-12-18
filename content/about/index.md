@@ -65,7 +65,7 @@ Back in 2018 I even got sponsored by "Vortex", a now defunct local fgc team, but
 Besides all that, I'm into videogames (who would've thought) and videogame criticism. Same with music, but I've been less and less interested in new music for a couple of years now. I have a [**Backloggd**](https://www.backloggd.com/u/CasteHappy/) and [**RateYourMusic**](https://rateyourmusic.com/~CasteHappy) account if you wanna see what I've been up to.
 
 As of late I've gotten into console repairs (mostly Wii), which I always liked but found a bit inaccessible until now. 
-I'm also the biggest advocate for videogame piracty, so I really enjoy learning about modding and homebrew.
+I'm also the biggest advocate for videogame piracy, so I really enjoy learning about modding and homebrew.
 
 
 [def]: TheDoorOfFate/static/images/thumbnails.png
