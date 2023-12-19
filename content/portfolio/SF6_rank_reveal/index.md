@@ -9,7 +9,7 @@ disableshare: false
 summary:
 description:
 cover:
-  image: /TheDoorOfFate/portfolio/SF6_rank_reveal/rank_portada.png
+  image: /TheDoorOfFate/content/portfolio/SF6_rank_reveal/rank_portada.png
   alt:
   caption:
   relative: true
