@@ -26,7 +26,7 @@ This is what I came up with:
 
 {{< rawhtml >}}
 <video width=100% controls>
-    <source src="/video/rankreveal.webm" type="video/webm">
+    <source src="https://castehappy.github.io/TheDoorOfFate/static/video/rankreveal.webm" type="video/webm">
     Your browser does not support the video tag.  
 </video>
 {{< /rawhtml >}}
