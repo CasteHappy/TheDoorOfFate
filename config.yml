@@ -12,6 +12,12 @@ canonifyURLs: true
 relativeURLs: true
 #googleAnalytics:
 
+outputs:
+  home:
+      - HTML
+      - RSS
+      - JSON
+
 minify:
   disableXML: true
   minifyOutput: false
@@ -39,6 +45,7 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  ShowFullTextinRSS: true
 
   label:
     text: "CasteHappy"
@@ -72,8 +79,10 @@ params:
     FGC competitor and piracy apologist."
 
   socialIcons:
+    - name: "rss"
+      url: "https://castehappy.github.io/TheDoorOfFate/index.xml"
     - name: youtube
-      url: "http://youtube.com/castehappy"
+      url: "https://youtube.com/castehappy"
       #name: twitter
       #url: "https://twitter.com/CasteHappy"
     - name: buymeacoffee
