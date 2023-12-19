@@ -9,7 +9,7 @@ disableshare: false
 summary:
 description:
 cover:
-  image: /TheDoorOfFate/images/rank_portada.png
+  image: rank_portada.png
   alt:
   caption:
   relative: true
@@ -26,7 +26,7 @@ This is what I came up with:
 
 {{< rawhtml >}}
 <video width=100% controls>
-    <source src="https://castehappy.github.io/TheDoorOfFate/static/video/rankreveal.webm" type="video/webm">
+    <source src="rankreveal.webm" type="video/webm">
     Your browser does not support the video tag.  
 </video>
 {{< /rawhtml >}}
@@ -37,20 +37,20 @@ First, I started getting the rank renders from SF6's [Buckler's Bootcamp](https:
 I don't know if many people know about this, but you can check your match history from the game, and search for other players' stats, matches and whatnot.
 
 This is a .zip with all the .pngs (except Legend rank):
-[SF6 Rank renders](/files/SF6_Ranks.zip)
+[SF6 Rank renders](SF6_Ranks.zip)
 
 I recommend using some kind of upscaling tool because the files are very small.
 
 Couldn't find the "?" icon that appears before getting your first rank, so I just made it myself in Photoshop with the pen tool and a bunch of shapes.
-![questionmark](/images/interrogante.png)
+![questionmark](interrogante.png)
 Never made lightning animations or anything similar so I just started playing around with a couple of effects in AE until I found **BCC Lens Flare 3D**
 You can modify every aspect of the lens flare and the presets are a really good starting point.
 
 {{< rawhtml >}}
 <table>
   <tr>
-    <th><img src="/images/bigbrightamberlight.png"</th>
-    <th><img src="/images/bigbrightamberlight_edit.png"</th>
+    <th><img src="bigbrightamberlight.png"</th>
+    <th><img src="bigbrightamberlight_edit.png"</th>
   </tr>
   <tr>
     <td colspan="2" style="text-align: center">
@@ -61,9 +61,9 @@ You can modify every aspect of the lens flare and the presets are a really good 
 
 <table>
   <tr>
-    <th><img src="/images/difractiondd.png"</th>
-    <th><img src="/images/difractiondd_edit.png"</th>
-    <th><img src="/images/difractiondd_edit2.png"</th>
+    <th><img src="difractiondd.png"</th>
+    <th><img src="difractiondd_edit.png"</th>
+    <th><img src="difractiondd_edit2.png"</th>
   </tr>
   <tr>
     <td colspan="3" style="text-align: center">
@@ -74,8 +74,8 @@ You can modify every aspect of the lens flare and the presets are a really good 
 
 <table>
   <tr>
-    <th><img src="/images/digicamsundd.png"</th>
-    <th><img src="/images/digicamsundd_edit.gif"</th>
+    <th><img src="digicamsundd.png"</th>
+    <th><img src="digicamsundd_edit.gif"</th>
   </tr>
   <tr>
     <td colspan="2" style="text-align: center">
@@ -89,15 +89,15 @@ You can modify every aspect of the lens flare and the presets are a really good 
 
 Now I just need to animate opacity, scale, position, and some other BBC Lens Flare parameters so it matches the original animation. Also made a mask for the big yellow flare with the shape of the halo (that I added later just by making a shape and adding some blur and glow to it)
 
-![lensflare](/images/lensflare_anim.gif)
+![lensflare](lensflare_anim.gif)
 
 Looking good! Only thing left is to add the actual rank renders, and a couple of cool details that make the animation a lot cooler.
 
 {{< rawhtml >}}
 <table>
   <tr>
-    <th><img src="/images/particles.png"</th>
-    <th><img src="/images/particles_anim.gif"</th>
+    <th><img src="particles.png"</th>
+    <th><img src="particles_anim.gif"</th>
   </tr>
   <tr>
     <td colspan="2" style="text-align: center">
@@ -107,8 +107,8 @@ Looking good! Only thing left is to add the actual rank renders, and a couple of
 </table>
 <table>
   <tr>
-    <th><img src="/images/brokenshape.png"</th>
-    <th><img src="/images/brokenshape_anim.gif"</th>
+    <th><img src="brokenshape.png"</th>
+    <th><img src="brokenshape_anim.gif"</th>
   </tr>
   <tr>
     <td colspan="2" style="text-align: center">
@@ -120,11 +120,11 @@ Looking good! Only thing left is to add the actual rank renders, and a couple of
 
 And here's everything put together:
 
-![finalanim](/images/finalanim.gif)
+![finalanim](finalanim.gif)
 
 {{< rawhtml >}}
 <video width=100% controls>
-    <source src="/video/sf6ranks.webm" type="video/webm">
+    <source src="sf6ranks.webm" type="video/webm">
     Your browser does not support the video tag.  
 </video>
 {{< /rawhtml >}}
