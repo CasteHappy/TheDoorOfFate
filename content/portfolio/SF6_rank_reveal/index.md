@@ -93,8 +93,6 @@ Now I just need to animate opacity, scale, position, and some other BBC Lens Fla
 
 Looking good! Only thing left is to add the actual rank renders, and a couple of cool details that make the animation a lot cooler.
 
-![cosa](particles.png)
-
 {{< rawhtml >}}
 <table>
   <tr>
