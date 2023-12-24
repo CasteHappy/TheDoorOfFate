@@ -12,7 +12,7 @@ cover:
   relative: true
 showtoc: true
 draft: false
-comments: true
+comments: false
 ---
 
 ## Hey!
