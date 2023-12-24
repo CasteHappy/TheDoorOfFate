@@ -2,7 +2,7 @@
 title: "The Cool Stuff"
 date:
 slug: links
-category:
+category: links
 url: /links
 summary:
 description:
@@ -11,7 +11,7 @@ cover:
   alt:
   caption:
   relative: true
-showtoc: true
+showtoc: false
 draft: false
 comments: false
 ---
