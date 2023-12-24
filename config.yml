@@ -27,7 +27,7 @@ params:
   title: CasteHappy
   description: "Online home of Javier (Caste) Castellanos, video editor, YTPMV enthusiast, FGC competitor and piracy apologist."
   keywords: [Blog, Portfolio, Video Editing, YTPMV]
-  author: Caste
+  author:
   # author: ["Me", "You"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
