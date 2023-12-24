@@ -34,7 +34,7 @@ params:
   defaultTheme: dark # dark, light
   disableThemeToggle: false
   ShowReadingTime: false
-  ShowShareButtons: false
+  ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -136,7 +136,7 @@ menu:
     - identifier: about
       name: About
       url: about/
-      weight: 4
+      weight: 5
     - identifier: blog
       name: Blogs
       url: blogs/
@@ -145,6 +145,10 @@ menu:
       name: Portfolio
       url: portfolio/
       weight: 2
+    - identifer: links
+      name: Links
+      url: links/
+      weight: 4
     #- identifier: tags
     #  name: tags
     #  url: /tags/
