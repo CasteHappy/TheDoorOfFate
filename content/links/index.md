@@ -28,6 +28,7 @@ comments: false
 - [The Brawl Compendium](https://docs.google.com/document/d/1yYjA4_OPQZcR_YaEVfGzFs7NHC1nFl07L9N4f6_HTSc)
 - [Dustloop](https://www.dustloop.com)
 - [thx nightcore](https://thx.nightcore.pl/)
+- [MMaker](https://mmaker.moe/)
 - [HackMii](https://hackmii.com/)
 - [WiiBrew](https://wiibrew.org)
 - [Wii Drive Chip Database](https://www.wiidrives.com)
