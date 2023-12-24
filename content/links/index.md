@@ -1,8 +1,9 @@
 ---
-title: "Helpful links"
+title: "The Cool Stuff"
 date:
 slug: links
 category:
+url: /links
 summary:
 description:
 cover:

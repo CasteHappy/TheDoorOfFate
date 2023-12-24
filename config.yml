@@ -34,7 +34,7 @@ params:
   defaultTheme: dark # dark, light
   disableThemeToggle: false
   ShowReadingTime: false
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
