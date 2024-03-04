@@ -1,6 +1,6 @@
 ---
 title: "Lost digital worlds #1 - Brawling in 2010"
-date: 2024-04-03T00:39:00+02:00
+date: 2024-03-03T00:39:00+02:00
 slug: digitalworlds1
 category: blogs
 url: /blogs/digital-worlds-1
@@ -9,7 +9,7 @@ disableshare: false
 summary:
 description:
 cover:
-  image:
+  image: stageportada.png
   alt:
   caption:
   thumbnailInList: true
@@ -33,7 +33,86 @@ Lately I've been really interested on the Wii as a system and I keep buying faul
 
 (Used Brawl Stage Studio so I could see the stages on my PC)
 
-The original creator of these stages is "Rafa", he played Brawl around 25 hours and _almost_ completed the Subspace Emisary at 75%, props to you!
+The original creator of these stages is *Rafa*, he played Brawl around 25 hours and _almost_ completed the Subspace Emisary at 75%, props to you!
 
-#Stage 1: PAPADOPOULOS
-![stage1](stage1.png)
+# Stage 1: PAPADOPOULOS
+
+{{< rawhtml >}}
+<center>
+<table>
+  <tr>
+    <th><img src="stage1.png"</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    Something something Spanish youtuber, if you know you know. But his is an easy 8/10.
+    </td>
+  </tr>
+</table>
+</center>
+{{< /rawhtml >}}
+
+
+# Stage 2: NEVADO
+
+{{< rawhtml >}}
+<table>
+  <tr>
+    <th><img src="stage2.png"</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    I really like how all of his stages are symmetric, but this is a 6/10, too big for such little platforms to fight on!
+    </td>
+  </tr>
+</table>
+{{< /rawhtml >}}
+
+# Stage 3: TONTERIA
+
+{{< rawhtml >}}
+<table>
+  <tr>
+    <th><img src="stage3.png"</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    I love this one, getting to the top platform can be tricky and everyone is gonna go up there to get an advantage. 9/10!
+    </td>
+  </tr>
+</table>
+{{< /rawhtml >}}
+
+# Stage 4: SALTITOS
+
+{{< rawhtml >}}
+<table>
+  <tr>
+    <th><img src="stage4.png"</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    This is the worst one for sure, but it did make me laugh out loud when I saw the name. It's an inside joke I have with my boyfriend that's a reference to his bird pet jumping on stuff.
+    </td>
+  </tr>
+</table>
+{{< /rawhtml >}}
+
+# Stage 5: COMO UN BALON
+
+{{< rawhtml >}}
+<table>
+  <tr>
+    <th><img src="stage5.png"</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    This one's just confusing. Is this supposed to be some kind of football field? Still a solid stage 7/10.
+    </td>
+  </tr>
+</table>
+{{< /rawhtml >}}
+
+[Here's a zip file with all 5 stages in case you want to download them](RafaBrawlStages.zip)
+
+And that's all I got for today, hopefully I can come back with more stuff like this, I definitely want to find more lost save files and share anything interesting here. 
