@@ -9,7 +9,7 @@ disableshare: false
 summary:
 description:
 cover:
-  image: stageportada.png
+  image: /TheDoorOfFate/images/stageportada.png
   alt:
   caption:
   thumbnailInList: true
