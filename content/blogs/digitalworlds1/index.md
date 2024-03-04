@@ -33,7 +33,7 @@ Lately I've been really interested on the Wii as a system and I keep buying faul
 
 (Used Brawl Stage Studio so I could see the stages on my PC)
 
-The original creator of these stages is *Rafa*, he played Brawl around 25 hours and _almost_ completed the Subspace Emisary at 75%, props to you!
+The original creator of these stages is **Rafa**, he played Brawl around 25 hours and _almost_ completed the Subspace Emisary at 75%, props to you!
 
 # Stage 1: PAPADOPOULOS
 
