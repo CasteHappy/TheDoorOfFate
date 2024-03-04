@@ -92,7 +92,7 @@ The original creator of these stages is **Rafa**, he played Brawl around 25 hour
   </tr>
   <tr>
     <td colspan="2" style="text-align: center">
-    This is the worst one for sure, but it did make me laugh out loud when I saw the name. It's an inside joke I have with my boyfriend that's a reference to his bird pet jumping on stuff.
+    This is the worst one for sure, but it did make me laugh out loud when I saw the name. It's an inside joke I have with my boyfriend that's a reference to his bird pet jumping on stuff. 4/10...
     </td>
   </tr>
 </table>
