@@ -31,7 +31,7 @@ Super Smash Bros is a very important game series to me (and Brawl was the first 
 
 Lately I've been really interested on the Wii as a system and I keep buying faulty consoles to repair, so I'll probably find more stages, pictures and replays in the future, can't wait to share them with you!
 
-(Used Brawl Stage Studio so I could see the stages on my PC)
+(Used [Brawl Stage Studio](https://www.gamebrew.org/wiki/Super_Smash_Bros._Brawl_Stage_Studio_Wii#External_links) so I could see the stages on my PC)
 
 The original creator of these stages is **Rafa**, he played Brawl around 25 hours and _almost_ completed the Subspace Emisary at 75%, props to you!
 
