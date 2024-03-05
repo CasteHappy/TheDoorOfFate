@@ -23,11 +23,11 @@ He was trying to build the neighborhood from the small beach town where he and h
 
 After showing me a bunch of spots on the island, he finished the tour by going to a tiny hill by the beach where he had built a tombstone that had a pine cone next to it. He told me that he used to walk around the neighborhood with his grandma to pick up pine cones and he looks back to that memory so fondly that they became some kind of memento for him.
 
-Took me a bit to process it, but I thought that was such beautiful sight. Made me start thinking about how a digital world could have so much meaning and weight for someone, and how it could also last forever as a time capsule, a snapshot from a specific time in your life than even when lacking the context for their creation, I can't help to put myself in the other person's shoes.
+Took me a bit to process it, but I thought that was such beautiful sight. Made me start thinking about how a digital world could have so much meaning and weight for someone, and how it could also last forever as a time capsule, a snapshot from a specific time in your life than even when lacking the context for their creation, you can't help to put myself in the other person's shoes.
 
 With all of that out of the way, I just finished crying my eyes out after looking at some custom stages from a Super Smash Bros. Brawl save file on a Wii that I repaired today haha.
 
-Super Smash Bros is a very important game series to me (and Brawl was the first one I owned), and I couldn't help thinking that those stages were once a fun creative moment for someone, and that now they're lost forever. I still feel so dumb by getting so gloomy about something so minor that even the original creator must have forgotten about, but I feel like sharing these stages with the world even if I'm the only one that ever see them.
+Super Smash Bros is a very important game series to me (and Brawl was the first one I owned), and I started thinking about how those stages were once a fun creative moment for someone, and that now they're lost forever. I still feel dumb by getting so gloomy about something so minor that even the original creator must have forgotten about, but I feel like sharing these stages with the world even if I'm the only one that ever see them.
 
 Lately I've been really interested on the Wii as a system and I keep buying faulty consoles to repair, so I'll probably find more stages, pictures and replays in the future, can't wait to share them with you!
 
