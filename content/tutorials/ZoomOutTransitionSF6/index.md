@@ -1,6 +1,6 @@
 ---
-title: "Fake zoom out transition with SF6 animations"
-date: 2024-03-03T00:39:00+02:00
+title: "Fake zoom out transition with SF6's animations"
+date: 2024-20-12T00:39:00+02:00
 slug: zoomout
 category: tutorials
 url: /tutorials/fakezoomout
