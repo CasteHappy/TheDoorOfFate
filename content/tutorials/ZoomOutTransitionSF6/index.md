@@ -18,7 +18,7 @@ showtoc: true
 draft: false
 ---
 
-I was asked by **ytrilogy1091** about how I made this transition from [one of the latest videos I've uploaded to Diaphone's channel](https://www.youtube.com/watch?v=dmHg8T8IMuw):
+I was asked by **ytrilogy1091** on Youtube about how I made this transition from [one of the latest videos I've uploaded to Diaphone's channel](https://www.youtube.com/watch?v=dmHg8T8IMuw):
 
 {{< rawhtml >}}
 <video width=100% controls>
