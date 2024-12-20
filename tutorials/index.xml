@@ -6,93 +6,11 @@
     <description>Recent content in Tutorials on CasteHappy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Aug 2023 22:39:00 +0200</lastBuildDate><atom:link href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Sidechain Compression (Audio Ducking) in Vegas Pro</title>
-      <link>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</link>
-      <pubDate>Sun, 27 Aug 2023 22:39:00 +0200</pubDate>
-      
-      <guid>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</guid>
-      <description>For a month or two I&amp;rsquo;ve been using sidechain compression in most of the vids I&amp;rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
-Just in case you don&amp;rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&amp;rsquo;t get compressed at all.</description>
-      <content:encoded><![CDATA[<p>For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.</p>
-<p>Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all.</p>
-<p>After some research I could only find a couple of solutions for Vegas Pro, <a href="https://www.vegascreativesoftware.info/us/forum/sidechain-aka-key-in-compression-impossible--83449/#ca488703"><strong>one that is native to the software</strong></a>, but that I really don&rsquo;t trust / I find too much work for such a simple thing. And another one that requires a plugin called <a href="https://www.db-audioware.com/sidechain-compressor"><strong>Sidechain Compressor V2 by dB Audioware</strong></a>, it&rsquo;s 79 bucks, but you can get it <a href="https://audioz.download/software/win/137876-download_db-audioware-sidechain-compressor-v200-ce-vr.html"><em>by other means</em></a>.</p>
-<p>It&rsquo;s very serviceable, but for some reason it won&rsquo;t ever save changes if you close Vegas Pro, so you have to either save the state of the plugin as a preset before closing the program, or just take a screenshot so you remember next time you open the project.</p>
-<p>I&rsquo;ve also read that you can do this with a FabFilter plugin, but I haven&rsquo;t figure out how yet, and I&rsquo;m honestly fine with the proccess I use now.</p>
-<h2 id="how-to-use-the-compressor">How to use the compressor</h2>
-<p>The proccess is very straightforward, just create one track that will be used as the trigger for the compressor (voice track), and at least another track that will affected by it (music track, for example), then go to <strong>View &gt; Window &gt; Mixing Console</strong> or just press <strong>Ctrl+Alt+5</strong> to open the <strong>Mixing Console</strong>.</p>
-<p><img loading="lazy" src="/images/mixing_console.png" alt="mixing console 1"  />
-</p>
-<p><img loading="lazy" src="/images/mixing_console2.png" alt="mixing console 2"  />
-</p>
-<p>In the Mixing Console, you have to create 2 Buses (A and B) by clicking on <strong>Insert Bus</strong>, and then clicking on the <strong>FX</strong> icon to open the effects list. Search for the Sidechain Compressor V2 plugin and <strong>add it to both buses</strong>.</p>
-<p><img loading="lazy" src="/images/mixing_console3.png" alt="mixing console 3"  />
-</p>
-<p><img loading="lazy" src="/images/mixing_console4.png" alt="mixing console 4"  />
-</p>
-<p><img loading="lazy" src="/images/mixing_console5.png" alt="mixing console 5"  />
-</p>
-<p>Before doing anything with the compressor, we need to &ldquo;assign&rdquo; the buses to the different tracks we want for this effect.
-<strong>We will assign &ldquo;Bus A&rdquo; to the tracks that will trigger the compressor, and &ldquo;Bus B&rdquo; to the tracks that will be affected by the compressor</strong>. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the &ldquo;output&rdquo; option (by default this option will be &ldquo;Master&rdquo;).</p>
-
-
-<div align="center">
-<table>
-  <tr>
-    <th><img src="/images/mixing_console6.png"</th>
-    <th><img src="/images/mixing_console7.png"</th>
-  </tr>
-</table>
-</div>
-
-  
-<p>Now, in the compressor, we have to turn on <strong>&ldquo;Universal Sidechain&rdquo;</strong> in both Buses. Then we just have to set Bus A to <strong>&ldquo;Send&rdquo;</strong> and Bus B to <strong>&ldquo;Receive&rdquo;</strong>.</p>
-
-
-<div align="center">
-<table>
-  <tr>
-    <th><img src="/images/mixing_consoleA.png"</th>
-    <th><img src="/images/mixing_consoleB.png"</th>
-  </tr>
-</table>
-</div>
-  
-<p>And that&rsquo;s basically all there is to it, only thing left is to tweak stuff around <strong>but you only want to modify the compressor in Bus B, the compressor we added to Bus A is just to send the signal to Bus B</strong></p>
-<p>I won&rsquo;t explain all the knobs and options in the compressor, you can look everything up in google, there&rsquo;s a lot of information on compressors and what all the settings and options are. I&rsquo;ll just leave you with a quick example of how the final result sounds like.</p>
-<p>Parameters I&rsquo;ve changed:</p>
-<ul>
-<li>Threshold: -26</li>
-<li>Ratio: 10:1</li>
-<li>Release: 1000ms</li>
-</ul>
-<audio controls preload="auto">
-    <source src="/audio/compressor.wav">
-</audio>
-
-<p>This is how it sounds without the compressor:</p>
-<audio controls preload="auto">
-    <source src="/audio/no-compressor.wav">
-</audio>
-
-<p>Obviously the music eats up the voiceover, so we&rsquo;d have to lower the music much more than that.
-This way, the music will be too low or too high sometimes unless we manually increase or decrease the levels when we need it, which is a lot more work than using the compressor to do everything for us.</p>
-<audio controls preload="auto">
-    <source src="/audio/no-compressor-lower.wav">
-</audio>
-
-<p>Of course there&rsquo;s a lot more to this and I&rsquo;m still a noob at everything related to audio.</p>
-<p>The results will be a lot better using Equalizers and a bunch of other effects, but just by using audio ducking you have a lot more freedom to choose different kind of songs for the project and overall the video will flow a lot better because you won&rsquo;t have to be as careful with the voice track being too loud / quiet.</p>
-<p>I hope this helps someone, I&rsquo;ve found a bunch of people mentioning this plugin in a couple of forums but I haven&rsquo;t seen any visual guides for it.</p>
-<p>If you have any questions let me know in the comments!</p>
-]]></content:encoded>
-    </item>
-    
+    <lastBuildDate>Fri, 20 Dec 2024 00:39:00 +0200</lastBuildDate><atom:link href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fake zoom out transition with SF6&#39;s animations</title>
       <link>https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Dec 2024 00:39:00 +0200</pubDate>
       
       <guid>https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/</guid>
       <description>I was asked by ytrilogy1091 about how I made this transition from one of the latest videos I&amp;rsquo;ve uploaded to Diaphone&amp;rsquo;s channel:
@@ -256,6 +174,88 @@ Keyframe velocity is really important here, I&rsquo;ll make it so it starts scal
 <p>As I said at the beginning, this is actually a really simple and common transition that sadly a lot of people overuse and spam at every opportunity they get lol (I used to be guilty of this as well), but this is the actual solution for getting the effect to look smooth and somewhat convincing.</p>
 <p>I&rsquo;m not used to making tutorials and English is not my first language so sorry if this was too much, or a bit confusing. Tried to explain it for someone that&rsquo;s a beginner.
 Also you can just follow the exact same steps in every editing software if you understand how it works.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Sidechain Compression (Audio Ducking) in Vegas Pro</title>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</link>
+      <pubDate>Sun, 27 Aug 2023 22:39:00 +0200</pubDate>
+      
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</guid>
+      <description>For a month or two I&amp;rsquo;ve been using sidechain compression in most of the vids I&amp;rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.
+Just in case you don&amp;rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&amp;rsquo;t get compressed at all.</description>
+      <content:encoded><![CDATA[<p>For a month or two I&rsquo;ve been using sidechain compression in most of the vids I&rsquo;ve edited, the result is super satisfying and lets your music choices shine without having to worry about the voiceover getting completely crushed by the songs.</p>
+<p>Just in case you don&rsquo;t know what sidechain compression is, just imagine a regular compressor that gets triggered by the signal of another track. So for example, a music track (B) will get compressed only when the voiceover (A) is playing, and when the voiceover is muted, the music won&rsquo;t get compressed at all.</p>
+<p>After some research I could only find a couple of solutions for Vegas Pro, <a href="https://www.vegascreativesoftware.info/us/forum/sidechain-aka-key-in-compression-impossible--83449/#ca488703"><strong>one that is native to the software</strong></a>, but that I really don&rsquo;t trust / I find too much work for such a simple thing. And another one that requires a plugin called <a href="https://www.db-audioware.com/sidechain-compressor"><strong>Sidechain Compressor V2 by dB Audioware</strong></a>, it&rsquo;s 79 bucks, but you can get it <a href="https://audioz.download/software/win/137876-download_db-audioware-sidechain-compressor-v200-ce-vr.html"><em>by other means</em></a>.</p>
+<p>It&rsquo;s very serviceable, but for some reason it won&rsquo;t ever save changes if you close Vegas Pro, so you have to either save the state of the plugin as a preset before closing the program, or just take a screenshot so you remember next time you open the project.</p>
+<p>I&rsquo;ve also read that you can do this with a FabFilter plugin, but I haven&rsquo;t figure out how yet, and I&rsquo;m honestly fine with the proccess I use now.</p>
+<h2 id="how-to-use-the-compressor">How to use the compressor</h2>
+<p>The proccess is very straightforward, just create one track that will be used as the trigger for the compressor (voice track), and at least another track that will affected by it (music track, for example), then go to <strong>View &gt; Window &gt; Mixing Console</strong> or just press <strong>Ctrl+Alt+5</strong> to open the <strong>Mixing Console</strong>.</p>
+<p><img loading="lazy" src="/images/mixing_console.png" alt="mixing console 1"  />
+</p>
+<p><img loading="lazy" src="/images/mixing_console2.png" alt="mixing console 2"  />
+</p>
+<p>In the Mixing Console, you have to create 2 Buses (A and B) by clicking on <strong>Insert Bus</strong>, and then clicking on the <strong>FX</strong> icon to open the effects list. Search for the Sidechain Compressor V2 plugin and <strong>add it to both buses</strong>.</p>
+<p><img loading="lazy" src="/images/mixing_console3.png" alt="mixing console 3"  />
+</p>
+<p><img loading="lazy" src="/images/mixing_console4.png" alt="mixing console 4"  />
+</p>
+<p><img loading="lazy" src="/images/mixing_console5.png" alt="mixing console 5"  />
+</p>
+<p>Before doing anything with the compressor, we need to &ldquo;assign&rdquo; the buses to the different tracks we want for this effect.
+<strong>We will assign &ldquo;Bus A&rdquo; to the tracks that will trigger the compressor, and &ldquo;Bus B&rdquo; to the tracks that will be affected by the compressor</strong>. In this example, we want the voiceover in Bus A, and the music in Bus B, you can assign the buses by just clicking in the &ldquo;output&rdquo; option (by default this option will be &ldquo;Master&rdquo;).</p>
+
+
+<div align="center">
+<table>
+  <tr>
+    <th><img src="/images/mixing_console6.png"</th>
+    <th><img src="/images/mixing_console7.png"</th>
+  </tr>
+</table>
+</div>
+
+  
+<p>Now, in the compressor, we have to turn on <strong>&ldquo;Universal Sidechain&rdquo;</strong> in both Buses. Then we just have to set Bus A to <strong>&ldquo;Send&rdquo;</strong> and Bus B to <strong>&ldquo;Receive&rdquo;</strong>.</p>
+
+
+<div align="center">
+<table>
+  <tr>
+    <th><img src="/images/mixing_consoleA.png"</th>
+    <th><img src="/images/mixing_consoleB.png"</th>
+  </tr>
+</table>
+</div>
+  
+<p>And that&rsquo;s basically all there is to it, only thing left is to tweak stuff around <strong>but you only want to modify the compressor in Bus B, the compressor we added to Bus A is just to send the signal to Bus B</strong></p>
+<p>I won&rsquo;t explain all the knobs and options in the compressor, you can look everything up in google, there&rsquo;s a lot of information on compressors and what all the settings and options are. I&rsquo;ll just leave you with a quick example of how the final result sounds like.</p>
+<p>Parameters I&rsquo;ve changed:</p>
+<ul>
+<li>Threshold: -26</li>
+<li>Ratio: 10:1</li>
+<li>Release: 1000ms</li>
+</ul>
+<audio controls preload="auto">
+    <source src="/audio/compressor.wav">
+</audio>
+
+<p>This is how it sounds without the compressor:</p>
+<audio controls preload="auto">
+    <source src="/audio/no-compressor.wav">
+</audio>
+
+<p>Obviously the music eats up the voiceover, so we&rsquo;d have to lower the music much more than that.
+This way, the music will be too low or too high sometimes unless we manually increase or decrease the levels when we need it, which is a lot more work than using the compressor to do everything for us.</p>
+<audio controls preload="auto">
+    <source src="/audio/no-compressor-lower.wav">
+</audio>
+
+<p>Of course there&rsquo;s a lot more to this and I&rsquo;m still a noob at everything related to audio.</p>
+<p>The results will be a lot better using Equalizers and a bunch of other effects, but just by using audio ducking you have a lot more freedom to choose different kind of songs for the project and overall the video will flow a lot better because you won&rsquo;t have to be as careful with the voice track being too loud / quiet.</p>
+<p>I hope this helps someone, I&rsquo;ve found a bunch of people mentioning this plugin in a couple of forums but I haven&rsquo;t seen any visual guides for it.</p>
+<p>If you have any questions let me know in the comments!</p>
 ]]></content:encoded>
     </item>
     
