@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Fake zoom out transition with SF6 animations | CasteHappy</title>
+<meta name="keywords" content="">
+<meta name="description" content="I was asked by ytrilogy1091 about how I made this transition from one of the latest videos I&rsquo;ve uploaded to Diaphone&rsquo;s channel:
+Your browser does not support the video tag. This is the actual question:
+Everything in the foreground I made it myself, I&rsquo;ve already talked about the &ldquo;rank reveal&rdquo; animation in this post.
+For the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select.">
+<meta name="author" content="">
+<link rel="canonical" href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.ff60fca09f8ad5a7df1ff3cbfa0494128b813ba76d52763141161b4dd0554e43.css" integrity="sha256-/2D8oJ&#43;K1affH/PL&#43;gSUEouBO6dtUnYxQRYbTdBVTkM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="../../assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://CasteHappy.github.io/TheDoorOfFate/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://CasteHappy.github.io/TheDoorOfFate/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://CasteHappy.github.io/TheDoorOfFate/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://CasteHappy.github.io/TheDoorOfFate/apple-touch-icon.png">
+<link rel="mask-icon" href="https://CasteHappy.github.io/TheDoorOfFate/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Fake zoom out transition with SF6 animations" />
+<meta property="og:description" content="I was asked by ytrilogy1091 about how I made this transition from one of the latest videos I&rsquo;ve uploaded to Diaphone&rsquo;s channel:
+Your browser does not support the video tag. This is the actual question:
+Everything in the foreground I made it myself, I&rsquo;ve already talked about the &ldquo;rank reveal&rdquo; animation in this post.
+For the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/" />
+<meta property="og:image" content="https://CasteHappy.github.io/tutorials/fakezoomout/TheDoorOfFate/images/zoomout-portada.png" /><meta property="article:section" content="tutorials" />
+<meta property="article:published_time" content="2024-03-03T00:39:00+02:00" />
+<meta property="article:modified_time" content="2024-03-03T00:39:00+02:00" /><meta property="og:site_name" content="CasteHappy" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://CasteHappy.github.io/tutorials/fakezoomout/TheDoorOfFate/images/zoomout-portada.png" />
+<meta name="twitter:title" content="Fake zoom out transition with SF6 animations"/>
+<meta name="twitter:description" content="I was asked by ytrilogy1091 about how I made this transition from one of the latest videos I&rsquo;ve uploaded to Diaphone&rsquo;s channel:
+Your browser does not support the video tag. This is the actual question:
+Everything in the foreground I made it myself, I&rsquo;ve already talked about the &ldquo;rank reveal&rdquo; animation in this post.
+For the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Tutorials",
+      "item": "https://CasteHappy.github.io/TheDoorOfFate/tutorials/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Fake zoom out transition with SF6 animations",
+      "item": "https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Fake zoom out transition with SF6 animations",
+  "name": "Fake zoom out transition with SF6 animations",
+  "description": "I was asked by ytrilogy1091 about how I made this transition from one of the latest videos I\u0026rsquo;ve uploaded to Diaphone\u0026rsquo;s channel:\nYour browser does not support the video tag. This is the actual question:\nEverything in the foreground I made it myself, I\u0026rsquo;ve already talked about the \u0026ldquo;rank reveal\u0026rdquo; animation in this post.\nFor the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select.",
+  "keywords": [
+    
+  ],
+  "articleBody": "I was asked by ytrilogy1091 about how I made this transition from one of the latest videos I’ve uploaded to Diaphone’s channel:\nYour browser does not support the video tag. This is the actual question:\nEverything in the foreground I made it myself, I’ve already talked about the “rank reveal” animation in this post.\nFor the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select.\nFor the screnshot I disabled the HUD and used a free camera mod to get closer to the actual door so I could use it by itself as a transition (closing the door) without having to zoom in and losing quality.\nThe video is not modified at all, I only disabled the HUD and just let it play until the characters show up\nYour browser does not support the video tag. Step 1: Separate the 2 parts of the animation So the first step is to reverse the video clip so it starts at the garage door, and ends at the long hallway with neon lights. If you’ve noticed, there isn’t really a smooth transition from the hallway to the character select garage door, but the in-game graphics hide it really well, and that’s kind of the secret of the transtion.\nSo after reversing the clip, I cut it into 2 different tracks, one for the zoom animation (Track 2), and one for the hallway animation (Track 1).\nYour browser does not support the video tag. I scaled up the first clip so it exactly matches the size of the screenshot, but it's irrelevant for the effect we want.\rThe problem here is that the hallway animation always moves at the same speed, so I’ll need to fake the movement so it matches the speed of the zoom out of the first clip.\nStep 2: Position the clips correctly Now I need to align the position of both clips. As you maybe have noticed, the perspective makes it so the end of the first clip and the end of the second one, don’t match at all. The scale is also completely off.\n",
+  "wordCount" : "376",
+  "inLanguage": "en",
+  "image":"https://CasteHappy.github.io/tutorials/fakezoomout/TheDoorOfFate/images/zoomout-portada.png","datePublished": "2024-03-03T00:39:00+02:00",
+  "dateModified": "2024-03-03T00:39:00+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CasteHappy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://CasteHappy.github.io/TheDoorOfFate/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://CasteHappy.github.io/TheDoorOfFate/" accesskey="h" title="CasteHappy (Alt + H)">
+                <img src="https://CasteHappy.github.io/TheDoorOfFate/images/crosshair.png" alt="" aria-label="logo"
+                    height="35">CasteHappy</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/blogs/" title="Blogs">
+                    <span>Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/links/" title="Links">
+                    <span>Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://CasteHappy.github.io/TheDoorOfFate/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://CasteHappy.github.io/TheDoorOfFate/">Home</a>&nbsp;»&nbsp;<a href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/">Tutorials</a></div>
+    <h1 class="post-title">
+      Fake zoom out transition with SF6 animations<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h1>
+    <div class="post-meta"><span title='2024-03-03 00:39:00 +0200 +0200'>March 3, 2024</span>
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="lazy" src="https://CasteHappy.github.io/TheDoorOfFate/images/zoomout-portada.png" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#step-1-separate-the-2-parts-of-the-animation" aria-label="Step 1: Separate the 2 parts of the animation">Step 1: Separate the 2 parts of the animation</a></li>
+                <li>
+                    <a href="#step-2-position-the-clips-correctly" aria-label="Step 2: Position the clips correctly">Step 2: Position the clips correctly</a></li>
+                <li>
+                    <a href="#step-3-the-actual-zoom-out" aria-label="Step 3: The actual zoom out">Step 3: The actual zoom out</a></li>
+                <li>
+                    <a href="#step-4-hide-in-plain-sight" aria-label="Step 4: Hide in plain sight">Step 4: Hide in plain sight</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>I was asked by <strong>ytrilogy1091</strong> about how I made this transition from <a href="https://www.youtube.com/watch?v=dmHg8T8IMuw">one of the latest videos I&rsquo;ve uploaded to Diaphone&rsquo;s channel</a>:</p>
+
+
+<video width=100% controls>
+    <source src="transition1.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<p>This is the actual question:</p>
+<p><img loading="lazy" src="ytcomment.png" alt="comment"  />
+</p>
+<p>Everything in the foreground I made it myself, I&rsquo;ve already talked about the &ldquo;rank reveal&rdquo; animation <a href="../../portfolio/SF6RankUp/">in this post</a>.</p>
+<p>For the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select.</p>
+<p>For the screnshot I disabled the HUD and used a free camera mod to get closer to the actual door so I could use it by itself as a transition (closing the door) without having to zoom in and losing quality.</p>
+<p><img loading="lazy" src="garagedoor.png" alt="garagedoor"  />
+</p>
+<p>The video is not modified at all, I only disabled the HUD and just let it play until the characters show up</p>
+
+
+<video width=100% controls>
+    <source src="animation1.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<h1 id="step-1-separate-the-2-parts-of-the-animation">Step 1: Separate the 2 parts of the animation<a hidden class="anchor" aria-hidden="true" href="#step-1-separate-the-2-parts-of-the-animation">#</a></h1>
+<p>So the first step is to reverse the video clip so it starts at the garage door, and ends at the long hallway with neon lights.
+If you&rsquo;ve noticed, there isn&rsquo;t really a smooth transition from the hallway to the character select garage door, but the in-game graphics hide it really well, and that&rsquo;s kind of the secret of the transtion.</p>
+<p>So after reversing the clip, I cut it into 2 different tracks, one for the zoom animation (Track 2), and one for the hallway animation (Track 1).</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="step1.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    I scaled up the first clip so it exactly matches the size of the screenshot, but it's irrelevant for the effect we want.
+    </td>
+  </tr>
+</table>
+
+<p>The problem here is that the hallway animation always moves at the same speed, so I&rsquo;ll need to fake the movement so it matches the speed of the zoom out of the first clip.</p>
+<h1 id="step-2-position-the-clips-correctly">Step 2: Position the clips correctly<a hidden class="anchor" aria-hidden="true" href="#step-2-position-the-clips-correctly">#</a></h1>
+<p>Now I need to align the position of both clips. As you maybe have noticed, the perspective makes it so the end of the first clip and the end of the second one, don&rsquo;t match at all. The scale is also completely off.</p>
+
+
+<center>
+<table>
+  <tr>
+    <th><img src="perspective.png"</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    "X" is the center of the image, the red line is where the floor starts.
+    </td>
+  </tr>
+</table>
+</center>
+
+<p>So I&rsquo;m gonna change the position and scale of the clip on track 1, so I get similar looking frames. Doesn&rsquo;t have to perfectly match.</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="comparison.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    A good visual reference is the size of the neon lights in both frames
+    </td>
+  </tr>
+</table>
+
+<p>So now it&rsquo;s looking like this:
+
+
+<video width=100% controls>
+    <source src="step2.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+</p>
+<h1 id="step-3-the-actual-zoom-out">Step 3: The actual zoom out<a hidden class="anchor" aria-hidden="true" href="#step-3-the-actual-zoom-out">#</a></h1>
+<p>At this point, the last step is to fake the movement of the second clip so it matches the speed of the zoom out animation of the first one.
+We can get this done with a simple scale animation.</p>
+<p>Right now the scale value of the hallway clip is 300%, I&rsquo;ll add a keyframe at the very first frame (300%), and another one 35 frames later with a value of 113%.
+Keyframe velocity is really important here, I&rsquo;ll make it so it starts scaling down really fast, but smoothly stops at the end.</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="zoomout1.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    Included how the velocity curve looks like just in case it's helpful.
+    </td>
+  </tr>
+</table>
+
+<p>And that&rsquo;s pretty much it, now if you play the full clip it looks pretty convincing.</p>
+
+
+<video width=100% controls>
+    <source src="zoomout2.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<p>If it looks off, just play around with the distance between the 2 keyframes and the velocity curves until it looks somewhat seamless.</p>
+<h1 id="step-4-hide-in-plain-sight">Step 4: Hide in plain sight<a hidden class="anchor" aria-hidden="true" href="#step-4-hide-in-plain-sight">#</a></h1>
+<p>The only thing left to do now is to <strong>lie</strong> in order to better sell the effect. I added a third track for the still image of the garage door, and animated its opacity so it transitions into the first clip.</p>
+
+
+<video width=100% controls>
+    <source src="step4-1.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<p>Then I added a fourth track with an adjustment layer, so I could add a Zoom blur effect that starts and ends at the same time as the actual &ldquo;zoom out&rdquo; we stitched together.</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="step4-2.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    This zoom effect also hides any imperfection, like the awful quality at the start of the second clip for example. Or any possible misalignments.
+    </td>
+  </tr>
+</table>
+
+<p>And that&rsquo;s the final result, this is how the actual timeline looks like:</p>
+<p><img loading="lazy" src="timeline.png" alt="timeline"  />
+</p>
+<p>As I said at the beginning, this is actually a really simple and common transition that sadly a lot of people overuse and spam at every opportunity they get lol (I used to be guilty of this as well), but this is the actual solution for getting the effect to look smooth and somewhat convincing.</p>
+<p>I&rsquo;m not used to making tutorials and English is not my first language so sorry if this was too much, or a bit confusing. Tried to explain it for someone that&rsquo;s a beginner.
+Also you can just follow the exact same steps in every editing software if you understand how it works.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Sidechain Compression (Audio Ducking) in Vegas Pro</span>
+  </a>
+</nav>
+
+  </footer><script src="https://giscus.app/client.js"
+        data-repo="CasteHappy/TheDoorOfFate-comments"
+        data-repo-id="R_kgDOK5EHgw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK5EHg84Cbsew"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://CasteHappy.github.io/TheDoorOfFate/">CasteHappy</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

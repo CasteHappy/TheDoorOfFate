@@ -6,7 +6,177 @@
     <description>Recent content in Tutorials on CasteHappy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Aug 2023 22:39:00 +0200</lastBuildDate><atom:link href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Mar 2024 00:39:00 +0200</lastBuildDate><atom:link href="https://CasteHappy.github.io/TheDoorOfFate/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fake zoom out transition with SF6 animations</title>
+      <link>https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/</link>
+      <pubDate>Sun, 03 Mar 2024 00:39:00 +0200</pubDate>
+      
+      <guid>https://CasteHappy.github.io/TheDoorOfFate/tutorials/fakezoomout/</guid>
+      <description>I was asked by ytrilogy1091 about how I made this transition from one of the latest videos I&amp;rsquo;ve uploaded to Diaphone&amp;rsquo;s channel:
+Your browser does not support the video tag. This is the actual question:
+Everything in the foreground I made it myself, I&amp;rsquo;ve already talked about the &amp;ldquo;rank reveal&amp;rdquo; animation in this post.
+For the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select.</description>
+      <content:encoded><![CDATA[<p>I was asked by <strong>ytrilogy1091</strong> about how I made this transition from <a href="https://www.youtube.com/watch?v=dmHg8T8IMuw">one of the latest videos I&rsquo;ve uploaded to Diaphone&rsquo;s channel</a>:</p>
+
+
+<video width=100% controls>
+    <source src="transition1.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<p>This is the actual question:</p>
+<p><img loading="lazy" src="ytcomment.png" alt="comment"  />
+</p>
+<p>Everything in the foreground I made it myself, I&rsquo;ve already talked about the &ldquo;rank reveal&rdquo; animation <a href="/portfolio/SF6RankUp/">in this post</a>.</p>
+<p>For the zoom out animation, I just needed 2 files, a still image of the garage door background that appears when choosing characters, and a video of the transition that plays between choosing a stage and going to character select.</p>
+<p>For the screnshot I disabled the HUD and used a free camera mod to get closer to the actual door so I could use it by itself as a transition (closing the door) without having to zoom in and losing quality.</p>
+<p><img loading="lazy" src="garagedoor.png" alt="garagedoor"  />
+</p>
+<p>The video is not modified at all, I only disabled the HUD and just let it play until the characters show up</p>
+
+
+<video width=100% controls>
+    <source src="animation1.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<h1 id="step-1-separate-the-2-parts-of-the-animation">Step 1: Separate the 2 parts of the animation</h1>
+<p>So the first step is to reverse the video clip so it starts at the garage door, and ends at the long hallway with neon lights.
+If you&rsquo;ve noticed, there isn&rsquo;t really a smooth transition from the hallway to the character select garage door, but the in-game graphics hide it really well, and that&rsquo;s kind of the secret of the transtion.</p>
+<p>So after reversing the clip, I cut it into 2 different tracks, one for the zoom animation (Track 2), and one for the hallway animation (Track 1).</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="step1.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    I scaled up the first clip so it exactly matches the size of the screenshot, but it's irrelevant for the effect we want.
+    </td>
+  </tr>
+</table>
+
+<p>The problem here is that the hallway animation always moves at the same speed, so I&rsquo;ll need to fake the movement so it matches the speed of the zoom out of the first clip.</p>
+<h1 id="step-2-position-the-clips-correctly">Step 2: Position the clips correctly</h1>
+<p>Now I need to align the position of both clips. As you maybe have noticed, the perspective makes it so the end of the first clip and the end of the second one, don&rsquo;t match at all. The scale is also completely off.</p>
+
+
+<center>
+<table>
+  <tr>
+    <th><img src="perspective.png"</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    "X" is the center of the image, the red line is where the floor starts.
+    </td>
+  </tr>
+</table>
+</center>
+
+<p>So I&rsquo;m gonna change the position and scale of the clip on track 1, so I get similar looking frames. Doesn&rsquo;t have to perfectly match.</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="comparison.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    A good visual reference is the size of the neon lights in both frames
+    </td>
+  </tr>
+</table>
+
+<p>So now it&rsquo;s looking like this:
+
+
+<video width=100% controls>
+    <source src="step2.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+</p>
+<h1 id="step-3-the-actual-zoom-out">Step 3: The actual zoom out</h1>
+<p>At this point, the last step is to fake the movement of the second clip so it matches the speed of the zoom out animation of the first one.
+We can get this done with a simple scale animation.</p>
+<p>Right now the scale value of the hallway clip is 300%, I&rsquo;ll add a keyframe at the very first frame (300%), and another one 35 frames later with a value of 113%.
+Keyframe velocity is really important here, I&rsquo;ll make it so it starts scaling down really fast, but smoothly stops at the end.</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="zoomout1.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    Included how the velocity curve looks like just in case it's helpful.
+    </td>
+  </tr>
+</table>
+
+<p>And that&rsquo;s pretty much it, now if you play the full clip it looks pretty convincing.</p>
+
+
+<video width=100% controls>
+    <source src="zoomout2.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<p>If it looks off, just play around with the distance between the 2 keyframes and the velocity curves until it looks somewhat seamless.</p>
+<h1 id="step-4-hide-in-plain-sight">Step 4: Hide in plain sight</h1>
+<p>The only thing left to do now is to <strong>lie</strong> in order to better sell the effect. I added a third track for the still image of the garage door, and animated its opacity so it transitions into the first clip.</p>
+
+
+<video width=100% controls>
+    <source src="step4-1.webm" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+<p>Then I added a fourth track with an adjustment layer, so I could add a Zoom blur effect that starts and ends at the same time as the actual &ldquo;zoom out&rdquo; we stitched together.</p>
+
+
+<table>
+  <tr>
+    <th>
+    <video width=100% controls>
+        <source src="step4-2.webm" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center">
+    This zoom effect also hides any imperfection, like the awful quality at the start of the second clip for example. Or any possible misalignments.
+    </td>
+  </tr>
+</table>
+
+<p>And that&rsquo;s the final result, this is how the actual timeline looks like:</p>
+<p><img loading="lazy" src="timeline.png" alt="timeline"  />
+</p>
+<p>As I said at the beginning, this is actually a really simple and common transition that sadly a lot of people overuse and spam at every opportunity they get lol (I used to be guilty of this as well), but this is the actual solution for getting the effect to look smooth and somewhat convincing.</p>
+<p>I&rsquo;m not used to making tutorials and English is not my first language so sorry if this was too much, or a bit confusing. Tried to explain it for someone that&rsquo;s a beginner.
+Also you can just follow the exact same steps in every editing software if you understand how it works.</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Sidechain Compression (Audio Ducking) in Vegas Pro</title>
       <link>https://CasteHappy.github.io/TheDoorOfFate/tutorials/sidechain-compressor-vegas-pro/</link>
