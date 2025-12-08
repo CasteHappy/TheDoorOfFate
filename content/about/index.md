@@ -17,6 +17,7 @@ comments: false
 
 ## Hey!
 *(updated as of 09/12/2025)*
+
 I'm Caste, a self-taught video editor and fighting game competitor since around 2008. From the first time I've had internet access I've always been really fascinated by video editing and graphic design, thanks to places like **Emudesc** (a now defunct internet forum about videogames), **DeviantArt**, and of course **Youtube** and the **YTP / YTPMV** community, which really got me into learning proper video editing software and sparked my interest for a lot of internet subcultures and their repective styles, music preferences, and of course their sense of humour (I've been here for the laughs from the beginning, you see?).
 
 It's been a really slow learning process because I've never seen any of this as a professional skill, and I honestly used it as a last resort when the COVID pandemic hit. Since 2020 I've probably learned a lot more than in the previous 12 years, and there's still a lot I have to explore and get good at.
