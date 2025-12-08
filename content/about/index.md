@@ -16,23 +16,24 @@ comments: false
 ---
 
 ## Hey!
-
+*(updated as of 09/12/2025)*
 I'm Caste, a self-taught video editor and fighting game competitor since around 2008. From the first time I've had internet access I've always been really fascinated by video editing and graphic design, thanks to places like **Emudesc** (a now defunct internet forum about videogames), **DeviantArt**, and of course **Youtube** and the **YTP / YTPMV** community, which really got me into learning proper video editing software and sparked my interest for a lot of internet subcultures and their repective styles, music preferences, and of course their sense of humour (I've been here for the laughs from the beginning, you see?).
 
-It's been a really slow learning process because I've never seen any of this as a professional skill, and I honestly used it as a last resort when the Covid pandemic hit. Since 2020 I've probably learned a lot more than in the last decade, and there's still a lot I have to explore and get good at.
+It's been a really slow learning process because I've never seen any of this as a professional skill, and I honestly used it as a last resort when the COVID pandemic hit. Since 2020 I've probably learned a lot more than in the previous 12 years, and there's still a lot I have to explore and get good at.
 
 ---
 
 ## Video Editing
 These are the main tools I use:
 - **MAGIX Vegas Pro 21**
-- **Adobe After Effects 2021**
-- **Adobe Photoshop 2021**
+- **Adobe After Effects 2024**
+- **Adobe Photoshop 2024**
+- **Adobe Illustrator 2024**
 - **Reaper**
 
-I also have experience with **Adobe Premiere** but I GREATLY dislike the workflow, and the advantages from Vegas Pro are not worth it.
+I also have some experience with **Adobe Premiere** but I GREATLY dislike its workflow. I should honestly switch to it at some point but for now I'm the biggest hater, Sony Vegas Stockholm syndrome.
 
-Since August 2020 I've been working mainly as a video editor for [**Diaphone**](https://www.youtube.com/@Diaphone) (a top level fighting game player and content creator), making mostly all videos and thumbnails on the channel (around 185) and getting over 6 Million views and 70.000 suscribers. While also making some other videos and thumbnails for other smallers creators in the same space.
+Since August 2020 I've been working mainly as a video editor for [**Diaphone**](https://www.youtube.com/@Diaphone) (a top level fighting game player and content creator), making mostly all videos and thumbnails on the channel (around 185) and getting over 30 Million views and 170.000 suscribers. While also making some other videos and thumbnails for other smallers creators in the same space.
 
 [**Playlist with all the vids I've edited**](https://www.youtube.com/watch?v=83ZaF5MCVug&list=PLVMomAI1oadE7rru_EC7aDWWqTuectgrt&ab_channel=Diaphone)
 
@@ -53,7 +54,7 @@ Back in 2018 I even got sponsored by "Vortex", a now defunct local fgc team, but
 - **Best Smash 4 player in Albacete (2014 to 2016)**
 - **Best Smash Ult. player in Albacete (2019)**
 - **#39 Dragon Ball FighterZ Spanish Ranking (2019)**
-- **#3 Road to Red Bull Gladiators Eur. classifier (Guilty Gear Strive)**
+- **#3 Road to Red Bull Gladiators Eur. classifier (Guilty Gear Strive) (2021)**
 - **Multiple Top 8 results in locals around Spain**
 - **Former WR for SSBB Classic Mode (05:25) - 03/03/2017**
 - **24th out of 231 in Shovel Knight Any% (47:52) - 23/01/2020**
@@ -62,10 +63,13 @@ Back in 2018 I even got sponsored by "Vortex", a now defunct local fgc team, but
 
 ## Other interests
 
-Besides all that, I'm into videogames (who would've thought) and videogame criticism. Same with music, but I've been less and less interested in new music for a couple of years now. I have a [**Backloggd**](https://www.backloggd.com/u/CasteHappy/) and [**RateYourMusic**](https://rateyourmusic.com/~CasteHappy) account if you wanna see what I've been up to.
+Besides all that, I'm into videogames (who would've thought), vgm and everything related to their artistic design, as well as criticism. Same with music, but I've been less and less interested in new music for a couple of years now. I have a [**Backloggd**](https://www.backloggd.com/u/CasteHappy/) and [**RateYourMusic**](https://rateyourmusic.com/~CasteHappy) account if you wanna see what I've been up to. I'm also the biggest advocate for videogame piracy and homebrews.
 
-As of late I've gotten into console repairs (mostly Wii), which I always liked but found a bit inaccessible until now. 
-I'm also the biggest advocate for videogame piracy, so I really enjoy learning about modding and homebrew.
+I'm also a frustrated graphic designer, I went to art school for a year but I didn't connect with the classes so I dropped out. I still love typography and motion graphics so much.
+
+As of late I've gotten into console repairs (mostly Wii), which I always enjoyed but found a bit inaccessible until now. I gift and sell repaired Wiis under the alias "Dr. Wii".
+
+Lastly, I'd call myself an activist against AI, and specially generative AI and LLMs. Fuck that shit.
 
 
 [def]: TheDoorOfFate/static/images/thumbnails.png
