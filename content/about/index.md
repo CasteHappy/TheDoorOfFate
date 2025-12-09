@@ -34,7 +34,7 @@ These are the main tools I use:
 
 I also have some experience with **Adobe Premiere** but I GREATLY dislike its workflow. I should honestly switch to it at some point but for now I'm the biggest hater, Sony Vegas Stockholm syndrome.
 
-Since August 2020 I've been working mainly as a video editor for [**Diaphone**](https://www.youtube.com/@Diaphone) (a top level fighting game player and content creator), making mostly all videos and thumbnails on the channel (around 185) and getting over 30 Million views and 170.000 suscribers. While also making some other videos and thumbnails for other smallers creators in the same space.
+Since August 2020 I've been working mainly as a video editor for [**Diaphone**](https://www.youtube.com/@Diaphone) (a top level fighting game player and content creator), making mostly all videos and thumbnails on the channel (around 330) and getting over 30 Million views and 170.000 suscribers. While also making some other videos and thumbnails for other smallers creators in the same space.
 
 [**Playlist with all the vids I've edited**](https://www.youtube.com/watch?v=83ZaF5MCVug&list=PLVMomAI1oadE7rru_EC7aDWWqTuectgrt&ab_channel=Diaphone)
 
